@@ -1,0 +1,242 @@
+{
+    "categories": [
+        {
+            "category_id": "10003000",
+            "group": "special",
+            "hierarchy": [
+              "Bank Fees",
+              "Late Payment"
+            ]
+        },
+        {
+            "category_id": "12008011",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Adult Education"
+            ]
+        },
+        {
+            "category_id": "12019000",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Senior Citizen Services"
+            ]
+        },
+        {
+            "category_id": "12019001",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Senior Citizen Services",
+              "Retirement"
+            ]
+        },
+        {
+            "category_id": "13003000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Internet Cafes"
+            ]
+        },
+        {
+            "category_id": "13005029",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Food Truck"
+            ]
+        },
+        {
+            "category_id": "13005032",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Fast Food"
+            ]
+        },
+        {
+            "category_id": "13005040",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Delis"
+            ]
+        },
+        {
+            "category_id": "13005048",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Burrito"
+            ]
+        },
+        {
+            "category_id": "13005049",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Burgers"
+            ]
+        },
+        {
+            "category_id": "13005057",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "American"
+            ]
+        },
+        {
+            "category_id": "17001006",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Party Centers"
+            ]
+        },
+        {
+            "category_id": "17001014",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Casinos and Gaming"
+            ]
+        },
+        {
+            "category_id": "17001018",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Arcades and Amusement Parks"
+            ]
+        },
+        {
+            "category_id": "18009000",
+            "group": "special",
+            "hierarchy": [
+              "Service",
+              "Cable"
+            ]
+        },
+        {
+            "category_id": "18011000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Cleaning"
+            ]
+        },
+        {
+            "category_id": "18012000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Computers"
+            ]
+        },
+        {
+            "category_id": "18014000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Credit Counseling and Bankruptcy Services"
+            ]
+        },
+        {
+            "category_id": "18016000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Employment Agencies"
+            ]
+        },
+        {
+            "category_id": "18018000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Entertainment"
+            ]
+        },
+        {
+            "category_id": "18018001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Entertainment",
+              "Media"
+            ]
+        },
+        {
+            "category_id": "18045008",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Laundry and Garment Services"
+            ]
+          },
+          {
+            "category_id": "19013000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Computers and Electronics"
+            ]
+          },
+          {
+            "category_id": "19013001",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Computers and Electronics",
+              "Video Games"
+            ]
+          },
+          {
+            "category_id": "19015000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Convenience Stores"
+            ]
+          },
+          {
+            "category_id": "19019000",
+            "group": "digital",
+            "hierarchy": [
+              "Shops",
+              "Digital Purchase"
+            ]
+          },
+          {
+            "category_id": "19020000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Discount Stores"
+            ]
+          },
+          {
+            "category_id": "19023000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Flea Markets"
+            ]
+          }
+    ]
+}

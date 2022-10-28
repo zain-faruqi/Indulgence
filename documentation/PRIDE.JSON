@@ -1,0 +1,1380 @@
+{
+    "categories": [
+        {
+            "category_id": "12008001",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Vocational Schools"
+            ]
+        },
+        {
+            "category_id": "12008002",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Tutoring and Educational Services"
+            ]
+        },
+        {
+            "category_id": "12008004",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Fraternities and Sororities"
+            ]
+        },
+        {
+            "category_id": "12008006",
+            "group": "place",
+            "hierarchy": [
+                "Community",
+                "Education",
+                "Dance Schools"
+            ]
+        },
+        {
+            "category_id": "12008007",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Culinary Lessons and Schools"
+            ]
+        },
+        {
+            "category_id": "12008008",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Computer Training"
+            ]
+        },
+        {
+            "category_id": "12008009",
+            "group": "place",
+            "hierarchy": [
+            "Community",
+            "Education",
+            "Colleges and Universities"
+            ]
+        },
+        {
+            "category_id": "12008010",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Education",
+              "Art School"
+            ]
+        },
+        {
+            "category_id": "12015000",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Organizations and Associations"
+            ]
+        },
+        {
+            "category_id": "12015001",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Organizations and Associations",
+              "Youth Organizations"
+            ]
+        },
+        {
+            "category_id": "12015002",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Organizations and Associations",
+              "Environmental"
+            ]
+        },
+        {
+            "category_id": "12015003",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Organizations and Associations",
+              "Charities and Non-Profits"
+            ]
+        },
+        {
+            "category_id": "12018000",
+            "group": "place",
+            "hierarchy": [
+              "Community",
+              "Religious"
+            ]
+        },
+        {
+            "category_id": "13001001",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Bar",
+              "Wine Bar"
+            ]
+        },
+        {
+            "category_id": "13001002",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Bar",
+              "Sports Bar"
+            ]
+        },
+        {
+            "category_id": "13001003",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Bar",
+              "Hotel Lounge"
+            ]
+        },
+        {
+            "category_id": "13002000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Breweries"
+            ]
+        },
+        {
+            "category_id": "13004000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Nightlife"
+            ]
+        },
+        {
+            "category_id": "13004003",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Nightlife",
+              "Karaoke"
+            ]
+        },
+        {
+            "category_id": "13004004",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Nightlife",
+              "Jazz and Blues Cafe"
+            ]
+        },
+        {
+            "category_id": "13005001",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Winery"
+            ]
+        },
+        {
+            "category_id": "13005019",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Juice Bar"
+            ]
+        },
+        {
+            "category_id": "13005037",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Distillery"
+            ]
+        },
+        {
+            "category_id": "13005041",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Cupcake Shop"
+            ]
+        },
+        {
+            "category_id": "17001001",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Theatrical Productions"
+            ]
+        },
+        {
+            "category_id": "17001002",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Symphony and Opera"
+            ]
+        },
+        {
+            "category_id": "17001003",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Sports Venues"
+            ]
+        },
+        {
+            "category_id": "17001004",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Social Clubs"
+            ]
+        },
+        {
+            "category_id": "17001005",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Psychics and Astrologers"
+            ]
+        },
+        {
+            "category_id": "17001007",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Music and Show Venues"
+            ]
+        },
+        {
+            "category_id": "17001008",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Museums"
+            ]
+        },
+        {
+            "category_id": "17001014",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Casinos and Gaming"
+            ]
+        },
+        {
+            "category_id": "17001015",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Bowling"
+            ]
+        },
+        {
+            "category_id": "17001016",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Billiards and Pool"
+            ]
+        },
+        {
+            "category_id": "17001017",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Art Dealers and Galleries"
+            ]
+        },
+        {
+            "category_id": "17002000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Athletic Fields"
+            ]
+        },
+        {
+            "category_id": "17003000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Baseball"
+            ]
+        },
+        {
+            "category_id": "17004000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Basketball"
+            ]
+        },
+        {
+            "category_id": "17005000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Batting Cages"
+            ]
+        },
+        {
+            "category_id": "17006000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Boating"
+            ]
+        },
+        {
+            "category_id": "17007000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Campgrounds and RV Parks"
+            ]
+        },
+        {
+            "category_id": "17008000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Canoes and Kayaks"
+            ]
+        },
+        {
+            "category_id": "17010000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Cycling"
+            ]
+        },
+        {
+            "category_id": "17011000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Dance"
+            ]
+        },
+        {
+            "category_id": "17012000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Equestrian"
+            ]
+        },
+        {
+            "category_id": "17013000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Football"
+            ]
+        },
+        {
+            "category_id": "17015000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Golf"
+            ]
+        },
+        {
+            "category_id": "17016000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Gun Ranges"
+            ]
+        },
+        {
+            "category_id": "17017000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Gymnastics"
+            ]
+        },
+        {
+            "category_id": "17018000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Gyms and Fitness Centers"
+            ]
+        },
+        {
+            "category_id": "17019000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Hiking"
+            ]
+        },
+        {
+            "category_id": "17020000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Hockey"
+            ]
+        },
+        {
+            "category_id": "17022000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Hunting and Fishing"
+            ]
+        },
+        {
+            "category_id": "17023001",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Landmarks",
+              "Monuments and Memorials"
+            ]
+        },
+        {
+            "category_id": "17023002",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Landmarks",
+              "Historic Sites"
+            ]
+        },
+        {
+            "category_id": "17025000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors"
+            ]
+        },
+        {
+            "category_id": "17025001",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors",
+              "Rivers"
+            ]
+        },
+        {
+            "category_id": "17025002",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors",
+              "Mountains"
+            ]
+        },
+        {
+            "category_id": "17025003",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors",
+              "Lakes"
+            ]
+        },
+        {
+            "category_id": "17025004",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors",
+              "Forests"
+            ]
+        },
+        {
+            "category_id": "17025005",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Outdoors",
+              "Beaches"
+            ]
+        },
+        {
+            "category_id": "17027003",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Parks",
+              "Natural Parks"
+            ]
+        },
+        {
+            "category_id": "17028000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Personal Trainers"
+            ]
+        },
+        {
+            "category_id": "17029000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Race Tracks"
+            ]
+        },
+        {
+            "category_id": "17030000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Racquet Sports"
+            ]
+        },
+        {
+            "category_id": "17031000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Racquetball"
+            ]
+        },
+        {
+            "category_id": "17032000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Rafting"
+            ]
+        },
+        {
+            "category_id": "17033000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Recreation Centers"
+            ]
+        },
+        {
+            "category_id": "17034000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Rock Climbing"
+            ]
+        },
+        {
+            "category_id": "17035000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Running"
+            ]
+        },
+        {
+            "category_id": "17036000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Scuba Diving"
+            ]
+        },
+        {
+            "category_id": "17037000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Skating"
+            ]
+        },
+        {
+            "category_id": "17038000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Skydiving"
+            ]
+        },
+        {
+            "category_id": "17039000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Snow Sports"
+            ]
+        },
+        {
+            "category_id": "17040000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Soccer"
+            ]
+        },
+        {
+            "category_id": "17041000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Sports and Recreation Camps"
+            ]
+        },
+        {
+            "category_id": "17042000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Sports Clubs"
+            ]
+        },
+        {
+            "category_id": "17043000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Stadiums and Arenas"
+            ]
+        },
+        {
+            "category_id": "17044000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Swimming"
+            ]
+        },
+        {
+            "category_id": "17045000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Tennis"
+            ]
+        },
+        {
+            "category_id": "17046000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Water Sports"
+            ]
+        },
+        {
+            "category_id": "17047000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Yoga and Pilates"
+            ]
+        },
+        {
+            "category_id": "18003000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Art Restoration"
+            ]
+        },
+        {
+            "category_id": "18004000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Audiovisual"
+            ]
+        },
+        {
+            "category_id": "18006002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Automotive",
+              "Motorcycle, Moped and Scooter Repair"
+            ]
+        },
+        {
+            "category_id": "18006004",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Automotive",
+              "Car Wash and Detail"
+            ]
+        },
+        {
+            "category_id": "18006005",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Automotive",
+              "Car Appraisers"
+            ]
+        },
+        {
+            "category_id": "18007000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Business and Strategy Consulting"
+            ]
+        },
+        {
+            "category_id": "18008000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Business Services"
+            ]
+        },
+        {
+            "category_id": "18008001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Business Services",
+              "Printing and Publishing"
+            ]
+        },
+        {
+            "category_id": "18012002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Computers",
+              "Software Development"
+            ]
+        },
+        {
+            "category_id": "18024000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement"
+            ]
+          },
+          {
+            "category_id": "18024001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Upholstery"
+            ]
+          },
+          {
+            "category_id": "18024002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Tree Service"
+            ]
+          },
+          {
+            "category_id": "18024003",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Swimming Pool Maintenance and Services"
+            ]
+          },
+          {
+            "category_id": "18024004",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Storage"
+            ]
+          },
+          {
+            "category_id": "18024005",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Roofers"
+            ]
+          },
+          {
+            "category_id": "18024006",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Pools and Spas"
+            ]
+          },
+          {
+            "category_id": "18024006",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Pools and Spas"
+            ]
+          },
+          {
+            "category_id": "18024012",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Lighting Fixtures"
+            ]
+          },
+          {
+            "category_id": "18024013",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Landscaping and Gardeners"
+            ]
+          },
+
+          {
+            "category_id": "18024014",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Kitchens"
+            ]
+          },
+          {
+            "category_id": "18024015",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Interior Design"
+            ]
+          },
+          {
+            "category_id": "18024016",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Housewares"
+            ]
+          },
+          {
+            "category_id": "18024017",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Home Inspection Services"
+            ]
+          },
+          {
+            "category_id": "18024018",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Home Appliances"
+            ]
+          },
+          {
+            "category_id": "18024021",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Fences, Fireplaces and Garage Doors"
+            ]
+          },
+          {
+            "category_id": "18024022",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Electricians"
+            ]
+          },
+          {
+            "category_id": "18024023",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Doors and Windows"
+            ]
+          },
+          {
+            "category_id": "18024024",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Contractors"
+            ]
+          },
+          {
+            "category_id": "18024025",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Carpet and Flooring"
+            ]
+          },
+          {
+            "category_id": "18024026",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Carpenters"
+            ]
+          },
+          {
+            "category_id": "18024027",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Home Improvement",
+              "Architects"
+            ]
+          },
+          {
+            "category_id": "18025000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Household"
+            ]
+          },
+          {
+            "category_id": "18045001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Tattooing"
+            ]
+          },
+          {
+            "category_id": "18045002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Tanning Salons"
+            ]
+          },
+          {
+            "category_id": "18045003",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Spas"
+            ]
+          },
+          {
+            "category_id": "18045004",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Skin Care"
+            ]
+          },
+          {
+            "category_id": "18045005",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Piercing"
+            ]
+          },
+          {
+            "category_id": "18045006",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Massage Clinics and Therapists"
+            ]
+          },
+          {
+            "category_id": "18045007",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Manicures and Pedicures"
+            ]
+          },
+          {
+            "category_id": "18045009",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Hair Salons and Barbers"
+            ]
+          },
+          {
+            "category_id": "18045010",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Hair Removal"
+            ]
+          },
+          {
+            "category_id": "18050000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Real Estate"
+            ]
+          },
+          {
+            "category_id": "18050001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Real Estate",
+              "Real Estate Development and Title Companies"
+            ]
+          },
+          {
+            "category_id": "18050002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Real Estate",
+              "Real Estate Appraiser"
+            ]
+          },
+          {
+            "category_id": "18050003",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Real Estate",
+              "Real Estate Agents"
+            ]
+          },
+          {
+            "category_id": "18065000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Tourist Information and Services"
+            ]
+          },
+          {
+            "category_id": "18066000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Transportation"
+            ]
+          },
+          {
+            "category_id": "18067000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Travel Agents and Tour Operators"
+            ]
+          },
+          {
+            "category_id": "19002000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Antiques"
+            ]
+          },
+          {
+            "category_id": "19003000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Arts and Crafts"
+            ]
+          },
+          {
+            "category_id": "19004000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Auctions"
+            ]
+          },
+          {
+            "category_id": "19005004",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Automotive",
+              "Motorcycles, Mopeds and Scooters"
+            ]
+          },
+          {
+            "category_id": "19005005",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Automotive",
+              "Classic and Antique Car"
+            ]
+          },
+          {
+            "category_id": "19005006",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Automotive",
+              "Car Parts and Accessories"
+            ]
+          },
+          {
+            "category_id": "19005007",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Automotive",
+              "Car Dealers and Leasing"
+            ]
+          },
+          {
+            "category_id": "19006000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Beauty Products"
+            ]
+          },
+          {
+            "category_id": "19008000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Boat Dealers"
+            ]
+          },
+          {
+            "category_id": "19012000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Clothing and Accessories"
+            ]
+          },
+          {
+            "category_id": "19012001",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Clothing and Accessories",
+              "Women's Store"
+            ]
+          },
+          {
+            "category_id": "19012005",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Clothing and Accessories",
+              "Lingerie Store"
+            ]
+          },
+          {
+            "category_id": "19016000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Costumes"
+            ]
+          },
+          {
+            "category_id": "19025004",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Food and Beverage Store",
+              "Beer, Wine and Spirits"
+            ]
+          },
+          {
+            "category_id": "19033000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Jewelry and Watches"
+            ]
+          },
+          {
+            "category_id": "19034000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Luggage"
+            ]
+          },
+          {
+            "category_id": "19037000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Musical Instruments"
+            ]
+          },
+          {
+            "category_id": "19040000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Outlet"
+            ]
+          },
+          {
+            "category_id": "19040001",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Outlet",
+              "Women's Store"
+            ]
+          },
+          {
+            "category_id": "19054000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Lawn and Garden"
+            ]
+          },
+          {
+            "category_id": "22000000",
+            "group": "place",
+            "hierarchy": [
+              "Travel"
+            ]
+          },
+          {
+            "category_id": "22001000",
+            "group": "special",
+            "hierarchy": [
+              "Travel",
+              "Airlines and Aviation Services"
+            ]
+          },
+          {
+            "category_id": "22002000",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Airports"
+            ]
+          },
+          {
+            "category_id": "22003000",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Boat"
+            ]
+          },
+          {
+            "category_id": "22008000",
+            "group": "special",
+            "hierarchy": [
+              "Travel",
+              "Cruises"
+            ]
+          },
+          {
+            "category_id": "22010000",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Heliports"
+            ]
+          },
+          {
+            "category_id": "22011000",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Limos and Chauffeurs"
+            ]
+          },
+          {
+            "category_id": "22012000",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Lodging"
+            ]
+          },
+          {
+            "category_id": "22012001",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Lodging",
+              "Resorts"
+            ]
+          },
+          {
+            "category_id": "22012002",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Lodging",
+              "Lodges and Vacation Rentals"
+            ]
+          },
+          {
+            "category_id": "22012003",
+            "group": "place",
+            "hierarchy": [
+              "Travel",
+              "Lodging",
+              "Hotels and Motels"
+            ]
+          }
+    ]
+}

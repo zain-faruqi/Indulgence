@@ -1,0 +1,204 @@
+{
+    "categories": [
+        {
+            "category_id": "14001001",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Healthcare Services",
+              "Psychologists"
+            ]
+        },
+        {
+            "category_id": "14001006",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Healthcare Services",
+              "Nutritionists"
+            ]
+        },
+        {
+            "category_id": "14001008",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Healthcare Services",
+              "Mental Health"
+            ]
+        },
+        {
+            "category_id": "14001013",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Healthcare Services",
+              "Counseling and Therapy"
+            ]
+        },
+        {
+            "category_id": "14001012",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Healthcare Services",
+              "Dentists"
+            ]
+        },
+        {
+            "category_id": "14002005",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Physicians",
+              "Plastic Surgeons"
+            ]
+        },
+        {
+            "category_id": "14002018",
+            "group": "place",
+            "hierarchy": [
+              "Healthcare",
+              "Physicians",
+              "Dermatologists"
+            ]
+        },
+        {
+            "category_id": "17001004",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Social Clubs"
+            ]
+        },
+        {
+            "category_id": "17001014",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Casinos and Gaming"
+            ]
+        },
+        {
+            "category_id": "17001016",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Arts and Entertainment",
+              "Billiards and Pool"
+            ]
+        },
+        {
+            "category_id": "17005000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Batting Cages"
+            ]
+        },
+        {
+            "category_id": "17011000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Dance"
+            ]
+        },
+        {
+            "category_id": "17018000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Gyms and Fitness Centers"
+            ]
+        },
+        {
+            "category_id": "17020000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Hockey"
+            ]
+        },
+        {
+            "category_id": "17028000",
+            "group": "place",
+            "hierarchy": [
+              "Recreation",
+              "Personal Trainers"
+            ]
+        },
+        {
+            "category_id": "18027000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Immigration"
+            ]
+          },
+          {
+            "category_id": "18045001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Tattooing"
+            ]
+          },
+          {
+            "category_id": "18045002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Tanning Salons"
+            ]
+          },
+          {
+            "category_id": "18045006",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Massage Clinics and Therapists"
+            ]
+          },
+          {
+            "category_id": "18045007",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Manicures and Pedicures"
+            ]
+          },
+          {
+            "category_id": "18045010",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Personal Care",
+              "Hair Removal"
+            ]
+          },
+          {
+            "category_id": "19012000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Clothing and Accessories"
+            ]
+          },
+          {
+            "category_id": "19012001",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Clothing and Accessories",
+              "Women's Store"
+            ]
+          }
+    ]
+}

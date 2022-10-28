@@ -1,0 +1,538 @@
+{
+    "categories": [
+        {
+            "category_id": "13000000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink"
+            ]
+        },
+        {
+            "category_id": "13001000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Bar"
+            ]
+        },
+        {
+            "category_id": "13005000",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants"
+            ]
+        },
+        {
+            "category_id": "13005002",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Vegan and Vegetarian"
+            ]
+        },
+        {
+            "category_id": "13005003",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Turkish"
+            ]
+        },
+        {
+            "category_id": "13005004",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Thai"
+            ]
+        },
+        {
+            "category_id": "13005005",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Swiss"
+            ]
+        },
+        {
+            "category_id": "13005006",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Sushi"
+            ]
+        },
+        {
+            "category_id": "13005007",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Steakhouses"
+            ]
+        },
+        {
+            "category_id": "13005008",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Spanish"
+            ]
+        },
+        {
+            "category_id": "13005009",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Seafood"
+            ]
+        },
+        {
+            "category_id": "13005010",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Scandinavian"
+            ]
+        },
+        {
+            "category_id": "13005011",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Portuguese"
+            ]
+        },
+        {
+            "category_id": "13005012",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Pizza"
+            ]
+        },
+        {
+            "category_id": "13005013",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Moroccan"
+            ]
+        },
+        {
+            "category_id": "13005014",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Middle Eastern"
+            ]
+        },
+        {
+            "category_id": "13005015",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Mexican"
+            ]
+        },
+        {
+            "category_id": "13005016",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Mediterranean"
+            ]
+        },
+        {
+            "category_id": "13005017",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Latin American"
+            ]
+        },
+        {
+            "category_id": "13005020",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Japanese"
+            ]
+        },
+        {
+            "category_id": "13005021",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Italian"
+            ]
+        },
+        {
+            "category_id": "13005022",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Indonesian"
+            ]
+        },
+        {
+            "category_id": "13005023",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Indian"
+            ]
+        },
+        {
+            "category_id": "13005024",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Ice Cream"
+            ]
+        },
+        {
+            "category_id": "13005025",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Greek"
+            ]
+        },
+        {
+            "category_id": "13005026",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "German"
+            ]
+        },
+        {
+            "category_id": "13005027",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Gastropub"
+            ]
+        },
+        {
+            "category_id": "13005028",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "French"
+            ]
+        },
+        {
+            "category_id": "13005030",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Fish and Chips"
+            ]
+        },
+        {
+            "category_id": "13005031",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Filipino"
+            ]
+        },
+        {
+            "category_id": "13005033",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Falafel"
+            ]
+        },
+        {
+            "category_id": "13005034",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Ethiopian"
+            ]
+        },
+        {
+            "category_id": "13005035",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Eastern European"
+            ]
+        },
+        {
+            "category_id": "13005036",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Donuts"
+            ]
+        },
+        {
+            "category_id": "13005038",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Diners"
+            ]
+        },
+        {
+            "category_id": "13005039",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Dessert"
+            ]
+        },
+        {
+            "category_id": "13005042",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Cuban"
+            ]
+        },
+        {
+            "category_id": "13005043",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Coffee Shop"
+            ]
+        },
+        {
+            "category_id": "13005044",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Chinese"
+            ]
+        },
+        {
+            "category_id": "13005045",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Caribbean"
+            ]
+        },
+        {
+            "category_id": "13005046",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Cajun"
+            ]
+        },
+        {
+            "category_id": "13005047",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Cafe"
+            ]
+        },
+        {
+            "category_id": "13005050",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Breakfast Spot"
+            ]
+        },
+        {
+            "category_id": "13005051",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Brazilian"
+            ]
+        },
+        {
+            "category_id": "13005052",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Barbecue"
+            ]
+        },
+        {
+            "category_id": "13005053",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Bakery"
+            ]
+        },
+        {
+            "category_id": "13005054",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Bagel Shop"
+            ]
+        },
+        {
+            "category_id": "13005055",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Australian"
+            ]
+        },
+        {
+            "category_id": "13005056",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Asian"
+            ]
+        },
+        {
+            "category_id": "13005058",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "African"
+            ]
+        },
+        {
+            "category_id": "13005059",
+            "group": "place",
+            "hierarchy": [
+              "Food and Drink",
+              "Restaurants",
+              "Afghan"
+            ]
+        },
+        {
+            "category_id": "18021000",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Food and Beverage"
+            ]
+        },
+        {
+            "category_id": "18021001",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Food and Beverage",
+              "Distribution"
+            ]
+        },
+        {
+            "category_id": "18021002",
+            "group": "place",
+            "hierarchy": [
+              "Service",
+              "Food and Beverage",
+              "Catering"
+            ]
+        }, 
+        {
+            "category_id": "19013002",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Computers and Electronics",
+              "Mobile Phones"
+            ]
+          },
+          {
+            "category_id": "19013003",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Computers and Electronics",
+              "Cameras"
+            ]
+          },
+          {
+            "category_id": "19025000",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Food and Beverage Store"
+            ]
+          },
+          {
+            "category_id": "19025001",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Food and Beverage Store",
+              "Specialty"
+            ]
+          },
+          {
+            "category_id": "19025002",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Food and Beverage Store",
+              "Health Food"
+            ]
+          },
+          {
+            "category_id": "19025004",
+            "group": "place",
+            "hierarchy": [
+              "Shops",
+              "Food and Beverage Store",
+              "Beer, Wine and Spirits"
+            ]
+          },
+    ]
+}
