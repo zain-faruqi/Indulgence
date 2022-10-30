@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import './App.css'
+import Home from './pages/Home'
 
-function App() {
+const App = props => {
   return (
-    <div className="App">
-      <h1>
-        Indulgence
-      </h1>
-    </div>
+    <Router>
+      <Routes>
+        {/* a route for the home page */}
+        <Route path="/" element={<Home />} />
+
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default App
