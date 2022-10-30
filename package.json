@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js"
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix front-end && npm run build --prefix front-end"
   },
   "overrides": {
     "got": "^12.1.0"
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Kei-KC/Indulgence#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "heroku": "^7.7.8",
     "mongoose": "^6.7.0"
