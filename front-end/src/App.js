@@ -1,16 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Home from './pages/Home'
+import NavBar from './components/NavBar'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = props => {
+const App= props => {
   return (
-    <Router>
-      <Routes>
-        {/* a route for the home page */}
-        <Route path="/" element={<Home />} />
-
-      </Routes>
-    </Router>
+    <>
+      <NavBar/>
+    </>
   );
 }
 
