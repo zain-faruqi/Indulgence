@@ -1,6 +1,6 @@
 // ALGORITHM THAT SORTS A USER'S API OBJECT TRANSACTIONS INTO SINS
 const { response } = require('express');
-const { lust, gluttony, greed, envy, pride, sloth, wrath, not_sin } = require('helper_functions/sins');
+const { lust, gluttony, greed, envy, pride, sloth, wrath, not_sin } = require('./sins.js');
 
 // ex API_obj
 const ex = {
