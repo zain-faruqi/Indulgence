@@ -12,6 +12,7 @@ const plaid_categories = {
     '10008000': ['Bank Fees', 'Cash Advance'],
     '10009000': ['Bank Fees', 'Excess Activity'],
     '11000000': ['Cash Advance'],
+
     '12000000': ['Community'],
     '12001000': ['Community', 'Animal Shelter'],
     '12002000': ['Community', 'Assisted Living Services'],
@@ -56,6 +57,7 @@ const plaid_categories = {
     '12018004': ['Community', 'Religious', 'Churches'],
     '12019000': ['Community', 'Senior Citizen Services'],
     '12019001': ['Community', 'Senior Citizen Services', 'Retirement'],
+
     '13000000': ['Food and Drink'],
     '13001000': ['Food and Drink', 'Bar'],
     '13001001': ['Food and Drink', 'Bar', 'Wine Bar'],
@@ -130,6 +132,7 @@ const plaid_categories = {
     '13005057': ['Food and Drink', 'Restaurants', 'American'],
     '13005058': ['Food and Drink', 'Restaurants', 'African'],
     '13005059': ['Food and Drink', 'Restaurants', 'Afghan'],
+
     '14000000': ['Healthcare'],
     '14001000': ['Healthcare', 'Healthcare Services'],
     '14001001': ['Healthcare', 'Healthcare Services', 'Psychologists'],
@@ -170,6 +173,7 @@ const plaid_categories = {
     '14002018': ['Healthcare', 'Physicians', 'Dermatologists'],
     '14002019': ['Healthcare', 'Physicians', 'Cardiologists'],
     '14002020': ['Healthcare', 'Physicians', 'Anesthesiologists'],
+
     '15000000': ['Interest'],
     '15001000': ['Interest', 'Interest Earned'],
     '15002000': ['Interest', 'Interest Charged'],
@@ -177,6 +181,7 @@ const plaid_categories = {
     '16001000': ['Payment', 'Credit Card'],
     '16002000': ['Payment', 'Rent'],
     '16003000': ['Payment', 'Loan'],
+
     '17000000': ['Recreation'],
     '17001000': ['Recreation', 'Arts and Entertainment'],
     '17001001': ['Recreation', 'Arts and Entertainment', 'Theatrical Productions'],
@@ -257,6 +262,7 @@ const plaid_categories = {
     '17046000': ['Recreation', 'Water Sports'],
     '17047000': ['Recreation', 'Yoga and Pilates'],
     '17048000': ['Recreation', 'Zoo'],
+
     '18000000': ['Service'],
     '18001000': ['Service', 'Advertising and Marketing'],
     '18001001': ['Service', 'Advertising and Marketing', 'Writing, Copywriting and Technical Writing'],
@@ -459,6 +465,7 @@ const plaid_categories = {
     '18073003': ['Service', 'Agriculture and Forestry', 'Livestock and Animals'],
     '18073004': ['Service', 'Agriculture and Forestry', 'Services'],
     '18074000': ['Service', 'Art and Graphic Design'],
+
     '19000000': ['Shops'],
     '19001000': ['Shops', 'Adult'],
     '19002000': ['Shops', 'Antiques'],
@@ -544,9 +551,11 @@ const plaid_categories = {
     '19052000': ['Shops', 'Wedding and Bridal'],
     '19053000': ['Shops', 'Wholesale'],
     '19054000': ['Shops', 'Lawn and Garden'],
+
     '20000000': ['Tax'],
     '20001000': ['Tax', 'Refund'],
     '20002000': ['Tax', 'Payment'],
+
     '21000000': ['Transfer'],
     '21001000': ['Transfer', 'Internal Account Transfer'],
     '21002000': ['Transfer', 'ACH'],
@@ -577,6 +586,7 @@ const plaid_categories = {
     '21012001': ['Transfer', 'Withdrawal', 'Check'],
     '21012002': ['Transfer', 'Withdrawal', 'ATM'],
     '21013000': ['Transfer', 'Save As You Go'],
+    
     '22000000': ['Travel'],
     '22001000': ['Travel', 'Airlines and Aviation Services'],
     '22002000': ['Travel', 'Airports'],
