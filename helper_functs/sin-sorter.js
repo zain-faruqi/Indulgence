@@ -1,5 +1,5 @@
 // ALGORITHM THAT SORTS A USER'S API OBJECT TRANSACTIONS INTO SINS
-const { response } = require('express');
+// const { response } = require('express');
 const { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery } = require('./9sins.js');
 
 // ex API_obj
@@ -71,39 +71,86 @@ const ex = {
      "item": {Object},
      "total_transactions": Number,
      "request_id": "45QSn"
-   }
+}
+
+function calc_percentage(res) {
+    res.limbo.percent = res.limbo.score / res.transac_ct;
+    res.lust.percent = res.lust.score / res.transac_ct;
+    res.gluttony.percent = res.gluttony.score / res.transac_ct;
+    res.greed.percent = res.greed.score / res.transac_ct;
+    res.wrath.percent = res.wrath.score / res.transac_ct;
+    res.heresy.percent = res.heresy.score / res.transac_ct;
+    res.violence.percent = res.violence.score / res.transac_ct;
+    res.fraud.percent = res.fraud.score / res.transac_ct;
+    res.treachery.percent = res.treachery.score / res.transac_ct;
+    return res;
+}
 
 function arbiter(API_obj) {
     let res = {
         'sin': '',
-        'greed_score': 0,
-        'lust_score': 0,
-        'pride_score': 0,
-        'sloth_score': 0,
-        'wrath_score': 0,
-        'envy_score': 0,
-        'gluttony_score': 0
+        'transac_ct': 0,
+        'limbo':      { 'score': 0, 'percent': 0 },
+        'lust':       { 'score': 0, 'percent': 0 },
+        'gluttony':   { 'score': 0, 'percent': 0 },
+        'greed':      { 'score': 0, 'percent': 0 },
+        'wrath':      { 'score': 0, 'percent': 0 },
+        'heresy':     { 'score': 0, 'percent': 0 },
+        'violence':   { 'score': 0, 'percent': 0 },
+        'fraud':      { 'score': 0, 'percent': 0 },
+        'treachery':  { 'score': 0, 'percent': 0 }
     };
 
     // iterate through each purchase obj
     for (let x = 0; x < API_obj.transactions.length; x++ ) {
         let purchase = API_obj.transactions[x];
         let id = purchase.category_id;
-        if (id in lust) { res.lust_score += 1 };
-        if (id in greed) { res.greed_score += 1 };
-        if (id in pride) { res.pride_score += 1 };
-        if (id in sloth) { res.sloth_score += 1 };
-        if (id in wrath) { res.wrath_score += 1 };
-        if (id in envy) { res.envy_score += 1 };
-        if (id in gluttony) { res.gluttony_score += 1 };
-    }
 
-    res.sin = Math.max(res.greed_score, res.lust_score, 
-                        res.pride_score, res.sloth_score, 
-                        res.wrath_score, res.envy_score, 
-                        res.gluttony_score
-                    );
+        if (id in limbo) { 
+            res.limbo.score += 1;
+        } else {
+            if (id in lust) { res.lust.score += 1 }
+            if (id in gluttony) { res.gluttony.score += 1 }
+            if (id in greed) { res.greed.score += 1 }
+            if (id in wrath) { res.wrath.score += 1 }
+            if (id in heresy) { res.heresy.score += 1 }
+            if (id in violence) { res.violence.score += 1 }
+            if (id in fraud) { res.fraud.score += 1 }
+            if (id in treachery) { res.treachery.score += 1 }
+          }
+        res.transac_ct += 1;
+    }
+    // CALCULATE PERCENTAGES OF SINS
+    res = calc_percentage(res);
+    
+    // ASSIGN SINS
+    // if treachery.percent >0 -> assign treachery
+    // elif fraud.percent >0 -> assign fraud
+    // elif violence.percent >0 -> assign violence
+    // else compare max between lust, gluttony, greed, wrath, heresy, limbo
+    if (res.treachery.percent > 0) 
+        res.sin = 'treachery';
+    else if (res.fraud.percent > 0)
+        res.sin = 'fraud';
+    else if (res.violence.percent > 0)
+        res.sin = 'violence';
+    else {
+        const max = Math.max(
+          res.lust.percent, res.gluttony.percent, 
+          res.greed.percent, res.wrath.percent, 
+          res.heresy.percent, res.limbo.percent
+        );
+
+        res.sin = (
+            max == res.lust.percent ? 'lust' : 
+            max == res.gluttony.percent ? 'gluttony' :
+            max == res.greed.percent ? 'greed' :
+            max == res.wrath.percent ? 'wrath' :
+            max == res.heresy.percent ? 'heresy' : 'limbo'
+        );
+    }
     return res;
 }
 
 console.log(arbiter(ex));
+module.exports = { arbiter };
