@@ -152,6 +152,7 @@ const plaid_categories = {
     '14001015': ['Healthcare', 'Healthcare Services', 'Blood Banks and Centers'],
     '14001016': ['Healthcare', 'Healthcare Services', 'Alternative Medicine'],
     '14001017': ['Healthcare', 'Healthcare Services', 'Acupuncture'],
+    
     '14002000': ['Healthcare', 'Physicians'],
     '14002001': ['Healthcare', 'Physicians', 'Urologists'],
     '14002002': ['Healthcare', 'Physicians', 'Respiratory'],
@@ -586,7 +587,7 @@ const plaid_categories = {
     '21012001': ['Transfer', 'Withdrawal', 'Check'],
     '21012002': ['Transfer', 'Withdrawal', 'ATM'],
     '21013000': ['Transfer', 'Save As You Go'],
-    
+
     '22000000': ['Travel'],
     '22001000': ['Travel', 'Airlines and Aviation Services'],
     '22002000': ['Travel', 'Airports'],

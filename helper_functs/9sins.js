@@ -1,7 +1,7 @@
 // CONTAINS ALL CATEGORY_ID & HIERARCHY DATA FOR PLAID API SORTED BY SIN
 // SINS ARE BASED OFF OF DANTES INFERNO
 
-// 1. LIMBO
+// 1. LIMBO ( TOTAL: 387 )
 // people who lived ethically and morally but were never baptized
 const limbo = {
     '10002000': ['Bank Fees', 'ATM'], 
@@ -393,7 +393,7 @@ const limbo = {
     '22018000': ['Travel', 'Transportation Centers']
 };
 
-// 2. LUST
+// 2. LUST ( TOTAL: 13 )
 // those who committed adultery
 const lust = {
     '13004000': ['Food and Drink', 'Nightlife'],
@@ -411,7 +411,7 @@ const lust = {
     '22012004': ['Travel', 'Lodging', 'Hostels'],
 };
 
-// 3. GLUTTONY
+// 3. GLUTTONY ( TOTAL: 88 )
 // indulging in food or drink excessively
 // excessive purchases
 const gluttony = {
@@ -506,7 +506,7 @@ const gluttony = {
     '22011000': ['Travel', 'Limos and Chauffeurs'],
 };
 
-// 4. GREED & PRODIGALITY
+// 4. GREED & PRODIGALITY ( TOTAL: 101 )
 // reserved for people who hoarded or squandered their money
 // strove to hold as much material wealth as possible
 const greed = {
@@ -613,7 +613,7 @@ const greed = {
     '22012002': ['Travel', 'Lodging', 'Lodges and Vacation Rentals'],
 };
 
-// 5. WRATH & SULLENNESS
+// 5. WRATH & SULLENNESS ( TOTAL: 22 )
 // those who became easily or violently angered
 // those who were sullen, or moody and grumpy, in life
 const wrath = {
@@ -641,7 +641,7 @@ const wrath = {
     '22011000': ['Travel', 'Limos and Chauffeurs'],
 };
 
-// 6. HERESY
+// 6. HERESY ( TOTAL: 26 )
 // Rejection of religious and/or political “norms"
 // holding beliefs contrary to those taught by orthodox theologies such as Christianity
 const heresy = {
@@ -670,11 +670,10 @@ const heresy = {
     '18033000': ['Service', 'Legal'],
     '18037018': ['Service', 'Manufacturing', 'Tobacco'],
     '18045001': ['Service', 'Personal Care', 'Tattooing'],
-    '19048000': ['Shops', 'Tobacco'],
-
+    '19048000': ['Shops', 'Tobacco']
 };
 
-// 7. VIOLENCE
+// 7. VIOLENCE ( TOTAL: 16 )
 // violence against others through murder, beatings, or destruction of property
 // violence against themselves
 const violence = {
@@ -696,7 +695,7 @@ const violence = {
     '19048000': ['Shops', 'Tobacco'],
 };
 
-// 8. FRAUD 
+// 8. FRAUD ( TOTAL: 4 )
 // those who consciously and willingly commit fraud
 // Panderers and seducers, flatterers
 // sorcerers and false prophets, liars, thieves
@@ -707,7 +706,7 @@ const fraud = {
     '18015000': ['Service', 'Dating and Escort'],
 };
 
-// 9. TREACHERY
+// 9. TREACHERY ( TOTAL: 6 )
 // Betrayers of special relationships
 const treachery = {
     '12002000': ['Community', 'Assisted Living Services'],
