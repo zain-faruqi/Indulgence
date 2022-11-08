@@ -7,6 +7,7 @@ import Privacy from '../../pages/Privacy';
 import About from '../../pages/About';
 import Contact from '../../pages/Contact';
 import Results from '../../pages/Results';
+import LOGO from '../../img/logo_whitetxt.png';
 import { Component } from 'react';
 
 export default class NavBar extends Component {
@@ -22,10 +23,13 @@ export default class NavBar extends Component {
           <Container>
             <Navbar.Brand as = {Link} to = {'/'}>
               <img
+                src= {LOGO}
+                height={30}
+                width={180}
+                className="d-inline-block align-top"
                 alt = ''
-                src='../../img/logo_whitetxt.png'
-                height='50'
-              /> Indulgence
+                loading = 'lazy'
+              />
             </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link as = {Link} to = {'/About'}>About</Nav.Link>
