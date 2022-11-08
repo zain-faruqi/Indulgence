@@ -1,9 +1,12 @@
 import './styles.css';
-import React, { Component } from 'react'
+import React from 'react';
 import Button from 'react-bootstrap/Button'
 
-export default class Home extends Component {
-  render() {
+
+function Home() {
+
+
+    
     return (
       <div className='HOME'>
         <h1>Which Hell is your Home? </h1>
@@ -12,5 +15,7 @@ export default class Home extends Component {
         
       </div>
     )
-  }
+
 }
+
+export default Home;

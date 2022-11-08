@@ -7,6 +7,7 @@ import Privacy from '../../pages/Privacy';
 import About from '../../pages/About';
 import Contact from '../../pages/Contact';
 import Results from '../../pages/Results';
+import Login from '../../pages/Login';
 import { Component } from 'react';
 
 export default class NavBar extends Component {
@@ -31,7 +32,8 @@ export default class NavBar extends Component {
               <Nav.Link as = {Link} to = {'/About'}>About</Nav.Link>
               <Nav.Link as = {Link} to = {'/Contact'}>Contact</Nav.Link>
               <Nav.Link as = {Link} to = {'/Privacy'}>Privacy</Nav.Link>
-              <Nav.Link as = {Link} to = {'/Results'}>Results</Nav.Link>
+              <Nav.Link as={Link} to={'/Results'}>Results</Nav.Link>
+              <Nav.Link as = {Link} to = {'/Login'}>Login</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
@@ -42,7 +44,8 @@ export default class NavBar extends Component {
           <Route exact path="/About" element={<About/>}/>
           <Route exact path="/Privacy" element={<Privacy/>}/>
           <Route exact path="/Contact" element={<Contact/>}/>
-          <Route exact path="/Results" element={<Results/>}/>
+            <Route exact path="/Results" element={<Results />} />
+            <Route exact path="/Login" element={<Login />} />
         </Routes>
       </div>
       </Router>
