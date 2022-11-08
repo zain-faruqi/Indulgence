@@ -20,7 +20,13 @@ export default class NavBar extends Component {
           style={{backgroundSize: "0", backgroundColor: "#A92117"}}
         >
           <Container>
-            <Navbar.Brand as = {Link} to = {'/'}>Indulgence</Navbar.Brand>
+            <Navbar.Brand as = {Link} to = {'/'}>
+              <img
+                alt = ''
+                src='../../img/logo_whitetxt.png'
+                height='50'
+              /> Indulgence
+            </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link as = {Link} to = {'/About'}>About</Nav.Link>
               <Nav.Link as = {Link} to = {'/Contact'}>Contact</Nav.Link>
