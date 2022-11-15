@@ -152,5 +152,6 @@ function arbiter(API_obj) {
     return res;
 }
 
-console.log(arbiter(ex));
-module.exports = { arbiter };
+let res = arbiter(ex);
+console.log(res);
+module.exports = { res };
