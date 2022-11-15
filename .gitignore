@@ -1,3 +1,5 @@
 /node-modules
 .DS_Store
 config.env
+*.icloud
+front-end/src/img/7sin.png
