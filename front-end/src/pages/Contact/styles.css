@@ -1,9 +1,10 @@
-.container {
-    display:flex;
-    align-items:center;
-    flex-direction: row;
-  }
-
-.container div{
-    flex-basis: 50%;
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #A92117;
+  height: calc(100vh - 56px);
+  width: 100%;
 }

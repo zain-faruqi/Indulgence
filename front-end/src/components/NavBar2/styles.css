@@ -1,0 +1,39 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 56px;
+    width: 100%;
+    background-color: #A92117;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: bottom;
+    width: 50%;
+    height: 100%;
+    list-style: none;
+}
+
+.nav-item{
+    margin-top: 30px;
+}
+
+
+.nav-item>a{
+    color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 70%;
+        padding: 10px;
+        
+}
+
+.nav-item>a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+

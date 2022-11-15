@@ -1,0 +1,10 @@
+.Privacy {
+    display:flex;
+    align-items:center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #A92117;
+    height: calc(100vh - 56px);
+    width: 100%;
+  }
+ 

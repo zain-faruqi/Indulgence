@@ -15,7 +15,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <Router>
-      <div>
+      <div className="nav-container">
       
         <Navbar
           fixedTop
