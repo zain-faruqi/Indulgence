@@ -42,7 +42,7 @@ const Login = () => {
        .catch((error) => {
          console.log(error);
         });
-    window.location.href = '/results';
+    /*window.location.href = '/results';*/
   },
   [],
 );
