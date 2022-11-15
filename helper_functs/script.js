@@ -1,5 +1,3 @@
-const { res } = require('sin-sorter.js');
-
 // set the dimensions and margins of the graph
 var width = 500
     height = 500
@@ -16,8 +14,8 @@ var svg = d3.select("#my_dataviz")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-/* Create dummy data
-var dummy = {a: 9, b: 20, c:30, d:8, e:12, f:3, g:7, h:0}
+// Create dummy data
+//var dummy = {a: 9, b: 20, c:30, d:8, e:12, f:3, g:7, h:0}
 
 // Dummy data from PLAID API
 let res = {
@@ -33,13 +31,14 @@ let res = {
     'fraud':      { 'score': 0, 'percent': 0 },
     'treachery':  { 'score': 1, 'percent': 0.1 }
 };
-*/
 
 let data = {};
 for (const [key, value] of Object.entries(res)) {
     if (typeof(value) === 'object' && value.percent != 0)
         data[key] = value.percent;
 }
+
+console.log(data);
 
 // set the color scale
 var color = d3.scaleOrdinal()
