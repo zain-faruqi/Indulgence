@@ -24,12 +24,17 @@ React.useEffect(() => {
 */
 
 export default function Results() {
-
+  var transactions = [];
+  consolf.log("1")
   const getTransactions = async () => {
     axios.get('/api/transactions').then((response) => {
+      consolf.log("2")
       console.log(response);
+      transactions = response.data.transactions;
     });
   }
+
+  getTransactions();
   /*
   const [post, setPost] = React.useState(null);
 
@@ -48,7 +53,7 @@ export default function Results() {
 
   return (
     <div>
-      {getTransactions}
+      {transactions}
     </div>
   );
 }
