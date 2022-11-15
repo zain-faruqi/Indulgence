@@ -108,15 +108,16 @@ app.post("/api/exchange_public_token", async (req, res, next) => {
 app.get("/api/transactions", async (req, res, next) => {
   const access_token = req.session.access_token;
   
-  const startDate = moment().subtract(1000, "days").format("YYYY-MM-DD");
+  const startDate = moment().subtract(1, "years").format("YYYY-MM-DD");
   const endDate = moment().format("YYYY-MM-DD");
-
+  console.log("date")
   const transactionResponse = await client.transactionsGet({
     access_token: access_token,
     start_date: startDate,
     end_date: endDate,
     options: { count: 10 },
   });
+  console.log(transactionResponse)
   res.json(transactionResponse.data);
 });
 

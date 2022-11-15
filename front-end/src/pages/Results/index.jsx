@@ -3,8 +3,56 @@ import axios from 'axios';
 
 
 
+const baseURL = '/api/transactions';
 
-function Results() {
+/*
+React.useEffect(() => {
+  const createLinkToken = async () => {
+    axios.get('/api/create_link_token')
+      .then(function (response) {
+        console.log(response);
+        const link_token = response.data.link_token;
+        setToken(link_token);
+        console.log("token: " + token);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+  createLinkToken();
+}, []);
+*/
+
+export default function Results() {
+
+  const getTransactions = async () => {
+    axios.get('/api/transactions').then((response) => {
+      console.log(response);
+    });
+  }
+  /*
+  const [post, setPost] = React.useState(null);
+
+  React.useEffect(() => {
+    const getTransactions = async () => {
+      axios.get('/api/transactions').then((response) => {
+        console.log(response);
+        setPost(response.data);
+      });
+    }
+
+    getTransactions();
+  }, []);
+  */
+  /*if (!post) return null;*/
+
+  return (
+    <div>
+      {getTransactions}
+    </div>
+  );
+}
+/*function Results() {
   console.log("HERE");
   var transactions = [];
 
@@ -25,7 +73,7 @@ function Results() {
   return (
     <div>{transactions}</div>
   )
-}
+}*/
   
       
  /*   return (
@@ -37,7 +85,7 @@ function Results() {
 
 }*/
 
-export default Results;
+
 
 /*
 export default class Results extends React.Component {
