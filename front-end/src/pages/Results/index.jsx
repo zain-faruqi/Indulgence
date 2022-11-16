@@ -23,9 +23,10 @@ React.useEffect(() => {
 }, []);
 */
 
+/*
 export default function Results() {
   var transactions = [];
-  consolf.log("1")
+  console.log("1")
   const getTransactions = async () => {
     axios.get('/api/transactions').then((response) => {
       consolf.log("2")
@@ -35,6 +36,8 @@ export default function Results() {
   }
 
   getTransactions();
+*/
+
   /*
   const [post, setPost] = React.useState(null);
 
@@ -51,19 +54,24 @@ export default function Results() {
   */
   /*if (!post) return null;*/
 
+/*
   return (
     <div>
       {transactions}
     </div>
   );
 }
-/*function Results() {
-  console.log("HERE");
-  var transactions = [];
+*/
 
+function Results() {
+  const transactions = [];
+
+  
   const getTransactions = async () => {
-    
-    axios.get('/api/transactions')
+    axios.get('/api/is_user_connected')
+      .then(function (response) {
+        if (response) {
+           axios.get('/api/transactions')
       .then(function (response) {
         console.log(response);
         transactions = response.data.transactions;
@@ -73,12 +81,24 @@ export default function Results() {
         console.log(error);
       });
         }
+     
+      }
+    )
+      .catch((error) => {
+        console.log(error);
+      }
+    );
+  }
   getTransactions();
+  
 
-  return (
-    <div>{transactions}</div>
-  )
-}*/
+    return (
+      <div>{transactions}</div>
+    )
+
+}
+
+export default Results;
   
       
  /*   return (
