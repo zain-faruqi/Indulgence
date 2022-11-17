@@ -117,7 +117,7 @@ app.get("/api/transactions", async (req, res, next) => {
     end_date: endDate,
     options: { count: 10 },
   });
-  console.log(transactionResponse)
+  console.log(transactionResponse.data)
   res.json(transactionResponse.data);
 });
 
