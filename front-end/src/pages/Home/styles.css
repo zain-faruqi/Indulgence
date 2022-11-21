@@ -2,7 +2,7 @@
     /* The image used */
     color: white;
     background-image: url(../../img/7sin.png);
-    height: 100vh;
+    height: calc(100vh - 56px);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,4 +10,11 @@
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }

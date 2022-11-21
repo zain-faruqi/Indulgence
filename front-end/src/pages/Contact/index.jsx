@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import pope from '../../img/pope.png';
+import './styles.css';
 
-export default class Contact extends Component {
-  render() {
+export default function Contact(){
+  
     return (
-      <div className='container'>
-      <br></br>
+      <div className='Contact'>
             <p>
                 <img src={pope} alt="pope image" height={400} width={400}/>
             </p>
@@ -15,5 +15,5 @@ export default class Contact extends Component {
             </p>
       </div>
     )
-  }
+  
 }

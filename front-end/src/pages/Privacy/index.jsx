@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import './styles.css';
 
-export default class Privacy extends Component {
-  render() {
+export default function Privacy() {
     return (
-      <div>
+      <div className="Privacy">
         <h2>
           We respect our customors' privacy, but one must realize there's no privacy before God.
           However, we do not store any financial information in our holy database. Atlas Amen.
@@ -21,4 +21,4 @@ export default class Privacy extends Component {
 
     )
   }
-}
+
