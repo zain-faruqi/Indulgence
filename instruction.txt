@@ -1,0 +1,15 @@
+1. cd to front-end and to npm run build
+2. at backend npm start
+3. login with login page
+4. click to result page
+5. observe backend terminal
+
+IF NOTHING SHOWS UP
+Restart
+
+1. cd to front-end and to npm run build
+1.2 run npm -s serve
+2. at backend npm start
+3. login with login page
+4. click to result page
+5. observe backend terminal

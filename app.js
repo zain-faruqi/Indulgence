@@ -5,6 +5,7 @@ const { Configuration, PlaidApi, Products, PlaidEnvironments } = require('plaid'
 const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
+const { arbiter, make_svg } = require('./helper_functs/sin-sorter')
 
 // database setup
 //require('./db');
@@ -31,6 +32,7 @@ app.use(session({
 
 // static files
 const path = require("path");
+const { response } = require('express');
 
 
 //plaid
@@ -107,16 +109,24 @@ app.post("/api/exchange_public_token", async (req, res, next) => {
 app.get("/api/transactions", async (req, res, next) => {
   const access_token = req.session.access_token;
   
-  const startDate = moment().subtract(30, "days").format("YYYY-MM-DD");
+  const startDate = moment().subtract(1, "years").format("YYYY-MM-DD");
   const endDate = moment().format("YYYY-MM-DD");
-
+  console.log("date")
   const transactionResponse = await client.transactionsGet({
     access_token: access_token,
     start_date: startDate,
     end_date: endDate,
+    /*
     options: { count: 10 },
+    */
   });
+  console.log(transactionResponse.data);
   res.json(transactionResponse.data);
+  let user_obj = arbiter(transactionResponse.data);
+  console.log(arbiter(transactionResponse.data));
+  /*
+  console.log(make_svg(user_obj)); // SVG file
+  */
 });
 
 
