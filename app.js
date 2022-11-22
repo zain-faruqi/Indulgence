@@ -118,9 +118,9 @@ app.get("/api/transactions", async (req, res, next) => {
     end_date: endDate,
     options: { count: 10 },
   });
-  console.log(transactionResponse.data)
+  console.log(transactionResponse.data);
   res.json(transactionResponse.data);
-  console.log(Judge.arbiter(transactionResponse.data))
+  console.log(arbiter(transactionResponse.data)); // transaction data -> arbiter object -> returns SVG file
 });
 
 
