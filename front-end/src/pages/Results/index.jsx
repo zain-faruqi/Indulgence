@@ -69,7 +69,7 @@ export default function Results() {
 */
 
 function Results() {
-  /*
+  
   const transactions = [];
 
   
@@ -80,7 +80,7 @@ function Results() {
            axios.get('/api/transactions')
       .then(function (response) {
         console.log(response);
-        transactions = response.data.transactions;
+        transactions = response.data;
         console.log("transactions: " + transactions);
       })
       .catch((error) => {
@@ -96,9 +96,16 @@ function Results() {
     );
   }
   getTransactions();
-  */
+  
+  return (
+    <div>{transactions}</div>
+  )
 
+}
 
+export default Results;
+
+/*
   const [images, setImages] = useState([wrath, greed, gluttony, heresy]);
   const [index, setIndex] = useState(Math.floor(Math.random() * 4));
   const [sins, setSins] = useState(["Wrath", "Greed", "Gluttony", "Heresy"]);
@@ -122,17 +129,18 @@ function Results() {
 }
 
 export default Results;
-  
-      
- /*   return (
+*/  
+    
+/*
+   return (
       <div>
       {getTransactions}
         Returned
       </div>
     )
 
-}*/
-
+}
+*/
 
 
 /*
