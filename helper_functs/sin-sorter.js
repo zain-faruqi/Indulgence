@@ -1,6 +1,7 @@
 // ALGORITHM THAT SORTS A USER'S API OBJECT TRANSACTIONS INTO SINS
 // const { response } = require('express');
 const { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery } = require('./9sins.js');
+const d3 = require("d3");
 
 // ex API_obj
 const ex = {
