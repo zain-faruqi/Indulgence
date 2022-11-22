@@ -150,7 +150,7 @@ function arbiter(API_obj) {
               max == res.heresy.percent ? 'heresy' : 'limbo'
     );
   }
-  return make_svg(res);
+  return res;
 }
 
 function make_svg(transac_obj) {
