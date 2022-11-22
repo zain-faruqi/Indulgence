@@ -116,13 +116,17 @@ app.get("/api/transactions", async (req, res, next) => {
     access_token: access_token,
     start_date: startDate,
     end_date: endDate,
+    /*
     options: { count: 10 },
+    */
   });
   console.log(transactionResponse.data);
   res.json(transactionResponse.data);
   let user_obj = arbiter(transactionResponse.data);
   console.log(arbiter(transactionResponse.data));
+  /*
   console.log(make_svg(user_obj)); // SVG file
+  */
 });
 
 
