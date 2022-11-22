@@ -5,7 +5,7 @@ const { Configuration, PlaidApi, Products, PlaidEnvironments } = require('plaid'
 const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
-var Judge = require('./helper_functs/sin-sorter')
+const { arbiter, make_svg } = require('./helper_functs/sin-sorter')
 
 // database setup
 //require('./db');
