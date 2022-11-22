@@ -1,7 +1,7 @@
 .HOME {
     /* The image used */
     color: white;
-    background-image: url(../../img/7sin.png);
+    background-image: url(../../img/7sins.png);
     height: calc(100vh - 56px);
     background-size: cover;
     -webkit-background-size: cover;
