@@ -2,7 +2,7 @@
 // const { response } = require('express');
 const { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery } = require('./9sins.js');
 
-import * as d3 from "d3";
+const d3 = await import("d3");
 
 // ex API_obj
 const ex = {
@@ -157,7 +157,7 @@ function arbiter(API_obj) {
 
 function make_svg(transac_obj) {
   // MAKE SVG FILE SCRIPT
-  //let res = arbiter(ex);
+  let res = arbiter(ex);
   //console.log(res);
 
   // set the dimensions and margins of the graph
@@ -252,4 +252,4 @@ function make_svg(transac_obj) {
       return (midangle < Math.PI ? 'start' : 'end')
     })
 }
-module.exports = { arbiter, make_svg };
+module.exports =  {arbiter, make_svg} ;
