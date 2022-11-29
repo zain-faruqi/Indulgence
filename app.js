@@ -6,7 +6,8 @@ const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
 
-import  { arbiter, make_svg } from './helper_functs/sin-sorter.js';
+import arbiter from './helper_functs/sin-sorter.js';
+import make_svg from './helper_functs/sin-sorter.js';
 
 /*
 const { arbiter, make_svg } = require('./helper_functs/sin-sorter');

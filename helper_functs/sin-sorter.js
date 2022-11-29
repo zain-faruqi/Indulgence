@@ -88,7 +88,7 @@ function calc_percentage(res) {
   return res;
 }
 
-function arbiter(API_obj) {
+export default function arbiter(API_obj) {
   let res = {
     'sin': '',
     'transac_ct': 0,
@@ -155,7 +155,7 @@ function arbiter(API_obj) {
 }
 
 
-function make_svg(transac_obj) {
+export default function make_svg(transac_obj) {
   // MAKE SVG FILE SCRIPT
   let res = arbiter(ex);
   //console.log(res);
@@ -252,4 +252,5 @@ function make_svg(transac_obj) {
       return (midangle < Math.PI ? 'start' : 'end')
     })
 }
-module.exports =  {arbiter, make_svg} ;
+
+//module.exports =  {arbiter, make_svg} ;
