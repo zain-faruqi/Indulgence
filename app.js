@@ -11,7 +11,6 @@ const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
 import arbiter from './helper_functs/sin-sorter.js';
-import make_svg from './helper_functs/sin-sorter.js';
 
 
 //const { arbiter, make_svg } = require('./helper_functs/sin-sorter');
@@ -138,8 +137,8 @@ app.get("/api/transactions", async (req, res, next) => {
   //let user_obj = arbiter(transactionResponse.data);
   /*console.log(arbiter(transactionResponse.data));*/
   //res.send(make_svg(transactionResponse.data))
-  console.log(make_svg(transactionResponse.data)); // SVG file
-  return res.send(make_svg(transactionResponse.data))
+  //console.log(make_svg(transactionResponse.data)); // SVG file
+  //return res.send(make_svg(transactionResponse.data))
 });
  
 
