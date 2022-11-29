@@ -1,6 +1,6 @@
 // ALGORITHM THAT SORTS A USER'S API OBJECT TRANSACTIONS INTO SINS
 // const { response } = require('express');
-import { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery } from './9sins.js';
+import {limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery} from './9sins.js';
 
 const d3 = await import("d3");
 
