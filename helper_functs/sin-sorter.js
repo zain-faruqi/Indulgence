@@ -90,6 +90,8 @@ function calc_percentage(res) {
 }
 
 export default function arbiter(API_obj) {
+  console.log(API_obj);
+  
   let res = {
     'sin': '',
     'transac_ct': 0,
@@ -103,7 +105,7 @@ export default function arbiter(API_obj) {
     'fraud': { 'score': 0, 'percent': 0 },
     'treachery': { 'score': 0, 'percent': 0 }
   };
-
+  
   // iterate through each purchase obj
   for (let x = 0; x < API_obj.transactions.length; x++) {
     let purchase = API_obj.transactions[x];

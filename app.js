@@ -1,24 +1,29 @@
-require('dotenv').config({ path: 'config.env' });
-var session = require('express-session');
-const moment = require("moment");
-const { Configuration, PlaidApi, Products, PlaidEnvironments } = require('plaid');
+//require('dotenv').config({ path: 'config.env' });
+import * as dotenv from 'dotenv';
+dotenv.config({path: 'config.env'})
+import session from 'express-session';
+//var session = require('express-session');
+import moment from 'moment';
+//const moment = require("moment");
+import { Configuration, PlaidApi, Products, PlaidEnvironments } from 'plaid';
+//const { Configuration, PlaidApi, Products, PlaidEnvironments } = require('plaid');
 const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
-
 import arbiter from './helper_functs/sin-sorter.js';
 import make_svg from './helper_functs/sin-sorter.js';
 
-/*
-const { arbiter, make_svg } = require('./helper_functs/sin-sorter');
-*/
+
+//const { arbiter, make_svg } = require('./helper_functs/sin-sorter');
+
 
 // database setup
 //require('./db');
 //const mongoose = require('mongoose');
 
 // express
-const express = require('express');
+import express from 'express';
+//const express = require('express');
 const app = express();
 
 // middleware
@@ -37,8 +42,10 @@ app.use(session({
 
 
 // static files
-const path = require("path");
-const { response } = require('express');
+import path from 'path';
+//const path = require("path");
+//const { response } = require('express');
+import { response } from 'express';
 
 
 //plaid
@@ -126,19 +133,22 @@ app.get("/api/transactions", async (req, res, next) => {
     options: { count: 10 },
     */
   });
-  /*console.log(transactionResponse.data);*/
+ // console.log(transactionResponse.data);
   res.json(transactionResponse.data);
   let user_obj = arbiter(transactionResponse.data);
   /*console.log(arbiter(transactionResponse.data));*/
   res.send(make_svg(user_obj))
-  console.log(make_svg(user_obj)); // SVG file
+  //console.log(make_svg(user_obj)); // SVG file
   
 });
+ 
 
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-
+const __dirname = dirname(fileURLToPath(import.meta.url));
 if (process.env.NODE_ENV == 'production') {
-    console.log(__dirname);
+    //console.log(__dirname);
     app.use(express.static(path.join(__dirname, '/front-end/build')));
     app.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, 'front-end', 'build', 'index.html'));
