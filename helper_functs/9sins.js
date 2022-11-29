@@ -3,7 +3,7 @@
 
 // 1. LIMBO ( TOTAL: 387 )
 // people who lived ethically and morally but were never baptized
-const limbo = {
+export const limbo = {
     '10002000': ['Bank Fees', 'ATM'], 
     '10005000': ['Bank Fees', 'Foreign Transaction'],
     '10006000': ['Bank Fees', 'Wire Transfer'],
@@ -395,7 +395,7 @@ const limbo = {
 
 // 2. LUST ( TOTAL: 13 )
 // those who committed adultery
-const lust = {
+export const lust = {
     '13004000': ['Food and Drink', 'Nightlife'],
     '13004001': ['Food and Drink', 'Nightlife', 'Strip Club'],
     '13004002': ['Food and Drink', 'Nightlife', 'Night Clubs'],
@@ -414,7 +414,7 @@ const lust = {
 // 3. GLUTTONY ( TOTAL: 88 )
 // indulging in food or drink excessively
 // excessive purchases
-const gluttony = {
+export const gluttony = {
     '10001000': ['Bank Fees', 'Overdraft'],
     '10003000': ['Bank Fees', 'Late Payment'],
     '10009000': ['Bank Fees', 'Excess Activity'],
@@ -509,7 +509,7 @@ const gluttony = {
 // 4. GREED & PRODIGALITY ( TOTAL: 101 )
 // reserved for people who hoarded or squandered their money
 // strove to hold as much material wealth as possible
-const greed = {
+export const greed = {
     '10000000': ['Bank Fees'],
     '10004000': ['Bank Fees', 'Fraud Dispute'],
     '10008000': ['Bank Fees', 'Cash Advance'],
@@ -616,7 +616,7 @@ const greed = {
 // 5. WRATH & SULLENNESS ( TOTAL: 22 )
 // those who became easily or violently angered
 // those who were sullen, or moody and grumpy, in life
-const wrath = {
+export const wrath = {
     '10003000': ['Bank Fees', 'Late Payment'],
     '10007000': ['Bank Fees', 'Insufficient Funds'],
     '10009000': ['Bank Fees', 'Excess Activity'],
@@ -644,7 +644,7 @@ const wrath = {
 // 6. HERESY ( TOTAL: 26 )
 // Rejection of religious and/or political “norms"
 // holding beliefs contrary to those taught by orthodox theologies such as Christianity
-const heresy = {
+export const heresy = {
     '12002000': ['Community', 'Assisted Living Services'],
     '12002001': ['Community', 'Assisted Living Services', 'Facilities and Nursing Homes'],
     '12002002': ['Community', 'Assisted Living Services', 'Caretakers'],
@@ -676,7 +676,7 @@ const heresy = {
 // 7. VIOLENCE ( TOTAL: 16 )
 // violence against others through murder, beatings, or destruction of property
 // violence against themselves
-const violence = {
+export const violence = {
     '12004000': ['Community', 'Courts'],
     '12007000': ['Community', 'Drug and Alcohol Services'],
     '12012000': ['Community', 'Law Enforcement'],
@@ -699,7 +699,7 @@ const violence = {
 // those who consciously and willingly commit fraud
 // Panderers and seducers, flatterers
 // sorcerers and false prophets, liars, thieves
-const fraud = {
+export const fraud = {
     '13004001': ['Food and Drink', 'Nightlife', 'Strip Club'],
     '13004002': ['Food and Drink', 'Nightlife', 'Night Clubs'],
     '13004006': ['Food and Drink', 'Nightlife', 'Adult Entertainment'],
@@ -708,7 +708,7 @@ const fraud = {
 
 // 9. TREACHERY ( TOTAL: 6 )
 // Betrayers of special relationships
-const treachery = {
+export const treachery = {
     '12002000': ['Community', 'Assisted Living Services'],
     '12002001': ['Community', 'Assisted Living Services', 'Facilities and Nursing Homes'],
     '12002002': ['Community', 'Assisted Living Services', 'Caretakers'],
@@ -717,4 +717,4 @@ const treachery = {
     '18015000': ['Service', 'Dating and Escort'],
 };
 
-module.exports = { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery };
+// module.exports = { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery };
