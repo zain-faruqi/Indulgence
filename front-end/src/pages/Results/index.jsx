@@ -122,7 +122,7 @@ function Results() {
         <h2>Enjoy your time in Hell!</h2>
         <p>
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
-          {transactions}
+          <img src={transactions} alt="hell image" height={400} width={400} />
         </p>
 
         <p>

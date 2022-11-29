@@ -1,9 +1,9 @@
 // ALGORITHM THAT SORTS A USER'S API OBJECT TRANSACTIONS INTO SINS
 // const { response } = require('express');
 const { limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery } = require('./9sins.js');
-/*
-const d3 = await import("d3");
-*/
+
+import * as d3 from "d3";
+
 // ex API_obj
 const ex = {
   "accounts": [{ Object }],
@@ -154,7 +154,7 @@ function arbiter(API_obj) {
   return res;
 }
 
-/*
+
 function make_svg(transac_obj) {
   // MAKE SVG FILE SCRIPT
   //let res = arbiter(ex);
@@ -253,5 +253,3 @@ function make_svg(transac_obj) {
     })
 }
 module.exports = { arbiter, make_svg };
-*/
-module.exports = { arbiter };
