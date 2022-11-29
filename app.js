@@ -124,7 +124,7 @@ app.get("/api/transactions", async (req, res, next) => {
   
   const startDate = moment().subtract(1, "years").format("YYYY-MM-DD");
   const endDate = moment().format("YYYY-MM-DD");
-  console.log("date")
+  //console.log("date")
   const transactionResponse = await client.transactionsGet({
     access_token: access_token,
     start_date: startDate,
@@ -134,12 +134,12 @@ app.get("/api/transactions", async (req, res, next) => {
     */
   });
  // console.log(transactionResponse.data);
-  res.json(transactionResponse.data);
-  let user_obj = arbiter(transactionResponse.data);
+  //res.json(transactionResponse.data);
+  //let user_obj = arbiter(transactionResponse.data);
   /*console.log(arbiter(transactionResponse.data));*/
-  res.send(make_svg(user_obj))
-  //console.log(make_svg(user_obj)); // SVG file
-  
+  //res.send(make_svg(transactionResponse.data))
+  console.log(make_svg(transactionResponse.data)); // SVG file
+  return res.send(make_svg(transactionResponse.data))
 });
  
 

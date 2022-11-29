@@ -96,14 +96,15 @@ function Results() {
       .then(function (response) {
         if (response) {
            axios.get('/api/transactions')
-      .then(function (response) {
-        console.log(response);
-        transactions = response.data;
-        console.log("transactions: " + transactions);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+          .then(function (response) {
+              console.log(response);
+              //type error
+              let transactions = response.data;
+              console.log(transactions);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
         }
      
       }
@@ -122,7 +123,7 @@ function Results() {
         <h2>Enjoy your time in Hell!</h2>
         <p>
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
-          <img src={transactions} alt="hell image" height={400} width={400} />
+          <img src={transactions} alt="Failed Pie" height={400} width={400} />
         </p>
 
         <p>

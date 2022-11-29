@@ -6,6 +6,7 @@ import {limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery}
 const d3 = await import("d3");
 
 // ex API_obj
+/*
 const ex = {
   "accounts": [{ Object }],
   "transactions": [{
@@ -75,7 +76,7 @@ const ex = {
   "total_transactions": Number,
   "request_id": "45QSn"
 }
-
+*/
 function calc_percentage(res) {
   res.limbo.percent = res.limbo.score / res.transac_ct;
   res.lust.percent = res.lust.score / res.transac_ct;
@@ -90,7 +91,7 @@ function calc_percentage(res) {
 }
 
 export default function arbiter(API_obj) {
-  console.log(API_obj);
+  //console.log(API_obj);
   
   let res = {
     'sin': '',
@@ -160,8 +161,8 @@ export default function arbiter(API_obj) {
 
 export  function make_svg(transac_obj) {
   // MAKE SVG FILE SCRIPT
-  let res = arbiter(ex);
-  //console.log(res);
+  let res = arbiter(transac_obj);
+  console.log(res);
 
   // set the dimensions and margins of the graph
   var width = 500
