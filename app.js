@@ -135,10 +135,11 @@ app.get("/api/transactions", async (req, res, next) => {
  // console.log(transactionResponse.data);
   //res.json(transactionResponse.data);
   //let user_obj = arbiter(transactionResponse.data);
-  /*console.log(arbiter(transactionResponse.data));*/
+  console.log(arbiter(transactionResponse.data));
   //res.send(make_svg(transactionResponse.data))
   //console.log(make_svg(transactionResponse.data)); // SVG file
   //return res.send(make_svg(transactionResponse.data))
+  return res.json(arbiter(transactionResponse.data));
 });
  
 

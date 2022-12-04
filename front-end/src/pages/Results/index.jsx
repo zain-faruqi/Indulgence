@@ -71,7 +71,7 @@ export default function Results() {
 }
 */
 
-function Results() {
+export default function Results() {
   
   const [images, setImages] = useState([wrath, greed, gluttony, heresy]);
   const [index, setIndex] = useState(Math.floor(Math.random() * 4));
@@ -88,33 +88,39 @@ function Results() {
     
   }; 
 
-  const transactions = [];
+  //const transactions = [];
+  const [transactions, setTransactions] = useState([]);
 
+  useEffect(() => {
+    getTransactions();
+},[]);
   
   const getTransactions = async () => {
-    axios.get('/api/is_user_connected')
+    await axios.get('/api/is_user_connected')
       .then(function (response) {
         if (response) {
            axios.get('/api/transactions')
           .then(function (response) {
-              console.log(response);
+              console.log('response:' + JSON.stringify(response.data));
               //type error
-              let transactions = response.data;
+              setTransactions(response.data);
+              //let transactions = response.data;
               console.log(transactions);
+              //return transactions;
           })
           .catch((error) => {
-            console.log(error);
+            console.error(error);
           });
         }
      
       }
     )
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       }
     );
   }
-  getTransactions();
+  //getTransactions();
   
   return (
   
@@ -123,9 +129,17 @@ function Results() {
         <h2>Enjoy your time in Hell!</h2>
         <p>
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
-          <img src={transactions} alt="Failed Pie" height={400} width={400} />
         </p>
-
+        <p>
+            {transactions ? 
+                transactions.map(transactions => {
+                    return(
+                       <div>
+                         <h3>{transactions.sin}</h3>
+                       </div>
+                    )
+                }) : <h3>No data yet</h3> }
+        </p>
         <p>
           You are going to hell for {sins[parseInt(index)]}
         </p>
@@ -138,7 +152,6 @@ function Results() {
 
 }
 
-export default Results;
 /*<div>{tramsaction}</div> */
 /*
   const [images, setImages] = useState([wrath, greed, gluttony, heresy]);
