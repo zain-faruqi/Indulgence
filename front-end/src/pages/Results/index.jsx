@@ -92,7 +92,9 @@ export default function Results() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    getTransactions();
+    (async () => {
+      await getTransactions();
+    })();
 },[]);
   
   const getTransactions = async () => {
@@ -131,14 +133,8 @@ export default function Results() {
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
         </p>
         <p>
-            {transactions ? 
-                transactions.map(transactions => {
-                    return(
-                       <div>
-                         <h3>{transactions.sin}</h3>
-                       </div>
-                    )
-                }) : <h3>No data yet</h3> }
+            
+            {transactions["sin"]}
         </p>
         <p>
           You are going to hell for {sins[parseInt(index)]}
