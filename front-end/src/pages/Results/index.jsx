@@ -133,11 +133,10 @@ export default function Results() {
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
         </p>
         <p>
-            
-            {transactions["sin"]}
+          You are going to hell for {transactions["sin"]}
         </p>
         <p>
-          You are going to hell for {sins[parseInt(index)]}
+          Your Totoal number of transaction is {transactions["transac_ct"]}
         </p>
           
           
