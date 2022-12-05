@@ -136,9 +136,38 @@ export default function Results() {
           You are going to hell for {transactions["sin"]}
         </p>
         <p>
-          Your Totoal number of transaction is {transactions["transac_ct"]}
+          Your Total number of transaction is {transactions["transac_ct"]}
         </p>
-          
+        <h3>
+          Your Sins Breakdown:
+        </h3>
+        <p>
+          Limbo: Nothing Wrong Really, but there's a place in Hell for you too.
+        </p>
+        <p>
+          Lust: Lust is for those that has failed to stay away from sex.
+        </p>
+        <p>
+          Gluttony:
+        </p>
+        <p>
+          Greed:
+        </p>
+        <p>
+          Wrath:
+        </p>
+        <p>
+          Heresy:
+        </p>
+        <p>
+          Violence:
+        </p>
+        <p>
+          Fraud:
+        </p>
+        <p>
+          Treachery:
+        </p>
           
       </div>
         <button onClick={downloadImage} variant="danger">share</button>
