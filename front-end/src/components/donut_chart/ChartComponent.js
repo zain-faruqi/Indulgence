@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import drawChart from "./drawCHart";
 
-const DonutChart = ({ data }) => {
-    console.log(data);
+const DonutChart = (data) => {
     const ref = useRef(null);
 
     useEffect(() => {
