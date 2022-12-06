@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import drawChart from "./drawCHart";
+import drawChart from "./drawChart";
 
 const DonutChart = ({data}) => {
     console.log(data);
