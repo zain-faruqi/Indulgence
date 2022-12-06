@@ -87,8 +87,10 @@ export default function Results() {
     
   }; 
 
-  //const transactions = [];
   const [transactions, setTransactions] = useState([]);
+
+  // DATA FOR DONUT CHART
+  const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -108,6 +110,16 @@ export default function Results() {
               //let transactions = response.data;
               console.log(transactions);
               //return transactions;
+
+              // populate setChartData using transactions obj
+              // includes labels
+              let data = [];
+              for (const [key, val] of Object.entries(transactions)) {
+              if (typeof (val) === 'object' && val.percent != 0)
+                data.push({key: val.percent});
+              }
+              setChartData(data);
+              console.log(chartData);
           })
           .catch((error) => {
             console.error(error);
@@ -136,6 +148,11 @@ export default function Results() {
         </p>
         <p>
           Your Total number of transaction is {transactions["transac_ct"]}
+        </p>
+        <p>
+          <div className="chart">
+            <ChartComponent data={} />
+          </div>
         </p>
         <h3>
           Your Sins Breakdown:
