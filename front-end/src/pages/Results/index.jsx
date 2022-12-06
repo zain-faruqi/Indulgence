@@ -162,31 +162,31 @@ export default function Results() {
           Your Sins Breakdown:
         </h3>
         <p>
-          Limbo: Nothing Wrong Really, but there's a place in Hell for you too.
+          Limbo: Nothing wrong really, but there's a place in Hell for you too.
         </p>
         <p>
-          Lust: Lust is for those that has failed to stay away from sex.
+          Lust: Someone's been committing adultery...
         </p>
         <p>
-          Gluttony:
+          Gluttony: You eat a bit too much, don't you?
         </p>
         <p>
-          Greed:
+          Greed: Money laundering? Hiding riches from family? You can't take that to hell.
         </p>
         <p>
-          Wrath:
+          Wrath: Violence and moodiness won't get you anywhere but deeper.
         </p>
         <p>
-          Heresy:
+          Heresy: Someone's a tad too blasphemous!
         </p>
         <p>
-          Violence:
+          Violence: Be kinder to others. And yourself. Or else...
         </p>
         <p>
-          Fraud:
+          Fraud: Caught in webs of lies. Still want to expand the lore?
         </p>
         <p>
-          Treachery:
+          Treachery: There's a special place in hell for backstabbers like you.
         </p>
           
       </div>
