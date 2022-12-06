@@ -47,7 +47,7 @@ const Home = () => {
        .catch((error) => {
          console.log(error);
         });
-    //window.location.href = '/results';
+    window.location.href = '/loading';
   },
   [],
 );
