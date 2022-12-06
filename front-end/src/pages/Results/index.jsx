@@ -90,7 +90,7 @@ export default function Results() {
   const [transactions, setTransactions] = useState([]);
 
   // DATA FOR DONUT CHART
-  const [chartData, setChartData] = useState([]);
+  // const [chartData, setChartData] = useState([]);
 
   useEffect(() => {
     (async () => {
@@ -118,6 +118,7 @@ export default function Results() {
               //    { sin: 'limbo', value: 10 }, 
               //    { sin: 'lust', value: 2 },
               // ]
+              /*
               let data = [];
               for (const [key, val] of Object.entries(transactions)) {
               if (typeof (val) === 'object' && val.percent != 0)
@@ -126,6 +127,7 @@ export default function Results() {
               console.log(data)
               setChartData(data);
               console.log(chartData);
+              */
           })
           .catch((error) => {
             console.error(error);
@@ -157,7 +159,7 @@ export default function Results() {
         </p>
         <p>
           <div className="chart">
-            <ChartComponent data={chartData} />
+            <ChartComponent data={transactions} />
           </div>
         </p>
         <h3>
