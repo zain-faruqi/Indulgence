@@ -3,8 +3,6 @@
 
 import {limbo, lust, gluttony, greed, wrath, heresy, violence, fraud, treachery} from './9sins.js';
 
-const d3 = await import("d3");
-
 // ex API_obj
 /*
 const ex = {
