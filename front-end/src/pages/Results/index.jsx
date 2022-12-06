@@ -8,8 +8,7 @@ import './styles.css';
 import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
 import html2canvas from 'html2canvas';
-
-
+import ChartComponent from '../components/donut_chart/ChartComponent';
 
 const baseURL = '/api/transactions';
 
