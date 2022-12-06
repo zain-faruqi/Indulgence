@@ -95,7 +95,7 @@ export default function Results() {
   useEffect(() => {
     (async () => {
       await getTransactions();
-      await setChartData();
+      //await setChartData();
     })();
 },[]);
   
