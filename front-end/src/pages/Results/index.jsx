@@ -113,10 +113,14 @@ export default function Results() {
 
               // populate setChartData using transactions obj
               // includes labels
+              // data = [ 
+              //    { sin: 'limbo', value: 10 }, 
+              //    { sin: 'lust', value: 2 },
+              // ]
               let data = [];
               for (const [key, val] of Object.entries(transactions)) {
               if (typeof (val) === 'object' && val.percent != 0)
-                data.push({key: val.percent});
+                data.push({sin: key, value: val.percent});
               }
               setChartData(data);
               console.log(chartData);
@@ -151,7 +155,7 @@ export default function Results() {
         </p>
         <p>
           <div className="chart">
-            <ChartComponent data={} />
+            <ChartComponent data={chartData} />
           </div>
         </p>
         <h3>
