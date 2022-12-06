@@ -7,7 +7,8 @@ const DonutChart = ({data}) => {
     useEffect(() => {
         (async () => {
             if (ref.current) {
-                await drawChart(ref.current, data);
+                let newData = alter_data(data);
+                await drawChart(ref.current, newData);
             }
           })();
     }, [ref]);
@@ -18,5 +19,20 @@ const DonutChart = ({data}) => {
         </div>
     );
 };
+
+function alter_data(data) {
+    // populate setChartData using transactions obj
+    // includes labels
+    // data = [ 
+    //    { sin: 'limbo', value: 10 }, 
+    //    { sin: 'lust', value: 2 },
+    // ]
+    let res = [];
+    for (const [key, val] of Object.entries(data)) {
+        if (typeof (val) === 'object' && val.percent != 0)
+            res.push({sin: key, value: val.percent});
+    }
+    return res;
+}
 
 export default React.memo(DonutChart);
