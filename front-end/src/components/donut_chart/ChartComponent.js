@@ -1,13 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import drawChart from "./drawCHart";
 
-const DonutChart = (data) => {
+const DonutChart = ({data}) => {
     const ref = useRef(null);
 
     useEffect(() => {
-        if (ref.current) {
-            drawChart(ref.current, data);
-        }
+        (async () => {
+            if (ref.current) {
+                await drawChart(ref.current, data);
+            }
+          })();
     }, [ref]);
 
     return (
