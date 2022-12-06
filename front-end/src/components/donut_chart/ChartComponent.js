@@ -5,12 +5,10 @@ const DonutChart = ({data}) => {
     const ref = useRef(null);
 
     useEffect(() => {
-        (async () => {
-            if (ref.current) {
-                let newData = alter_data(data);
-                await drawChart(ref.current, newData);
-            }
-          })();
+        if (ref.current) {
+            let newData = alter_data(data);
+            drawChart(ref.current, newData);
+        }
     }, [ref]);
 
     return (
