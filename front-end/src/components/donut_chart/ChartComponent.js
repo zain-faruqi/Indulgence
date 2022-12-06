@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import drawChart from "./drawCHart";
 
 const DonutChart = ({data}) => {
+    console.log(data);
     const ref = useRef(null);
 
     useEffect(() => {
