@@ -26,7 +26,7 @@ import express from 'express';
 //const express = require('express');
 const app = express();
 const store = new MongoDBStore({
-  uri: 'mongodb+srv://sl7029:<password>@cluster0.4ngnj0j.mongodb.net/?retryWrites=true&w=majority',
+  uri: process.env.DB_URI,
   collection: 'mySessions'
 })
 
