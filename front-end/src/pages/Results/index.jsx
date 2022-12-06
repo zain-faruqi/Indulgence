@@ -162,31 +162,31 @@ export default function Results() {
           Your Sins Breakdown:
         </h3>
         <p>
-          Limbo: Nothing wrong really, but there's a place in Hell for you too.
+          Limbo {transactions['limbo']}: Nothing wrong really, but there's a place in Hell for you too.
         </p>
         <p>
-          Lust: Someone's been committing adultery...
+          Lust {transactions['lust']}: Someone's been committing adultery...
         </p>
         <p>
-          Gluttony: You eat a bit too much, don't you?
+          Gluttony {transactions['gluttony']}: You eat a bit too much, don't you?
         </p>
         <p>
-          Greed: Money laundering? Hiding riches from family? You can't take that to hell.
+          Greed {transactions['greed']}: Money laundering? Hiding riches from family? You can't take that to hell.
         </p>
         <p>
-          Wrath: Violence and moodiness won't get you anywhere but deeper.
+          Wrath {transactions['wrath']}: Violence and moodiness won't get you anywhere but deeper.
         </p>
         <p>
-          Heresy: Someone's a tad too blasphemous!
+          Heresy {transactions['heresy']}: Someone's a tad too blasphemous!
         </p>
         <p>
-          Violence: Be kinder to others. And yourself. Or else...
+          Violence {transactions['violence']}: Be kinder to others. And yourself. Or else...
         </p>
         <p>
-          Fraud: Caught in webs of lies. Still want to expand the lore?
+          Fraud {transactions['fraud']}: Caught in webs of lies. Still want to expand the lore?
         </p>
         <p>
-          Treachery: There's a special place in hell for backstabbers like you.
+          Treachery {transactions['treachery']}: There's a special place in hell for backstabbers like you.
         </p>
           
       </div>
