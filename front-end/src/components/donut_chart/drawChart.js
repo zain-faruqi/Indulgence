@@ -19,13 +19,31 @@ const drawChart = (element, data) => {
 
   const arcGenerator = d3.arc().innerRadius(0).outerRadius(250);
 
+  // DATA FORMAT
+  // data = [ 
+  //    { sin: 'limbo', value: 10 }, 
+  //    { sin: 'lust', value: 2 },
+  // ]
   const pieGenerator = d3.pie().value((d) => d.value);
-
   const arcs = svg.selectAll().data(pieGenerator(data)).enter();
+
+  // colors of pie chart
   arcs
     .append("path")
     .attr("d", arcGenerator)
     .style("fill", (d, i) => colors[i % data.length]);
+
+  // append text labels
+  arcs
+    .append("text")
+    .attr("text-anchor", "middle")
+    .text((d) => `$(d.data.sin)%`) // label text
+    .style("fill", "#fff") // label color
+    .style("font-size", "30px") // label size
+    .attr("transform", (d) => {
+      const [x,y] = arcGenerator.centroid(d);
+      return `translate(${x}, ${y})`;
+    });
 };
 
 export default drawChart;
