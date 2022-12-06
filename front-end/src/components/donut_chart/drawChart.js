@@ -17,7 +17,7 @@ const drawChart = (element, data) => {
     .append("g")
     .attr("transform", `translate(${boxSize / 2}, ${boxSize / 2})`);
 
-  const arcGenerator = d3.arc().innerRadius(0).outerRadius(250);
+  const arcGenerator = d3.arc().padAngle(0.02).innerRadius(150).outerRadius(250);
 
   // DATA FORMAT
   // data = [ 
@@ -33,15 +33,15 @@ const drawChart = (element, data) => {
     .attr("d", arcGenerator)
     .style("fill", (d, i) => colors[i % data.length]);
 
-  // append text labels
+  // text labels
   arcs
     .append("text")
     .attr("text-anchor", "middle")
     .text((d) => `$(d.data.sin)%`) // label text
     .style("fill", "#fff") // label color
-    .style("font-size", "30px") // label size
+    .style("font-size", ".9em") // label size
     .attr("transform", (d) => {
-      const [x,y] = arcGenerator.centroid(d);
+      const [x,y] = arcGenerator.centroid(d); // place label at center
       return `translate(${x}, ${y})`;
     });
 };
