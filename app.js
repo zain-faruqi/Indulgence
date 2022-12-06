@@ -11,7 +11,8 @@ const PLAID_CLIENT_ID = process.env.PLAID_CLIENT_ID;
 const PLAID_SECRET = process.env.PLAID_SECRET;
 const PLAID_ENV = process.env.PLAID_ENV || 'sandbox';
 import arbiter from './helper_functs/sin-sorter.js';
-
+import { default as connectMongoDBSession} from 'connect-mongodb-session';
+const MongoDBStore = connectMongoDBSession(session);
 
 //const { arbiter, make_svg } = require('./helper_functs/sin-sorter');
 
@@ -24,18 +25,28 @@ import arbiter from './helper_functs/sin-sorter.js';
 import express from 'express';
 //const express = require('express');
 const app = express();
+const store = new MongoDBStore({
+  uri: 'mongodb+srv://sl7029:<password>@cluster0.4ngnj0j.mongodb.net/?retryWrites=true&w=majority',
+  collection: 'mySessions'
+})
 
+store.on('error', function(error) {
+  console.log(error);
+});
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
   secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: true,
   cookie: {
+    //Maximum age for 10 minutes for coockies
+    maxAge: 1000 * 60 * 10,
     secure: false,
     sameSite: true
-  }
+  },
+  store: store,
+  resave: false,
+  saveUninitialized: true,
   
 }));
 
