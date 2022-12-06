@@ -8,7 +8,7 @@ import './styles.css';
 import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
 import html2canvas from 'html2canvas';
-import ChartComponent from '../components/donut_chart/ChartComponent';
+import ChartComponent from '../../components/donut_chart/ChartComponent.js';
 
 const baseURL = '/api/transactions';
 
@@ -123,6 +123,7 @@ export default function Results() {
               if (typeof (val) === 'object' && val.percent != 0)
                 data.push({sin: key, value: val.percent});
               }
+              console.log(data)
               setChartData(data);
               console.log(chartData);
           })
@@ -163,31 +164,31 @@ export default function Results() {
           Your Sins Breakdown:
         </h3>
         <p>
-          Limbo {transactions['limbo']}: Nothing wrong really, but there's a place in Hell for you too.
+          Limbo : Nothing wrong really, but there's a place in Hell for you too.
         </p>
         <p>
-          Lust {transactions['lust']}: Someone's been committing adultery...
+          Lust : Someone's been committing adultery...
         </p>
         <p>
-          Gluttony {transactions['gluttony']}: You eat a bit too much, don't you?
+          Gluttony : You eat a bit too much, don't you?
         </p>
         <p>
-          Greed {transactions['greed']}: Money laundering? Hiding riches from family? You can't take that to hell.
+          Greed : Money laundering? Hiding riches from family? You can't take that to hell.
         </p>
         <p>
-          Wrath {transactions['wrath']}: Violence and moodiness won't get you anywhere but deeper.
+          Wrath : Violence and moodiness won't get you anywhere but deeper.
         </p>
         <p>
-          Heresy {transactions['heresy']}: Someone's a tad too blasphemous!
+          Heresy : Someone's a tad too blasphemous!
         </p>
         <p>
-          Violence {transactions['violence']}: Be kinder to others. And yourself. Or else...
+          Violence : Be kinder to others. And yourself. Or else...
         </p>
         <p>
-          Fraud {transactions['fraud']}: Caught in webs of lies. Still want to expand the lore?
+          Fraud : Caught in webs of lies. Still want to expand the lore?
         </p>
         <p>
-          Treachery {transactions['treachery']}: There's a special place in hell for backstabbers like you.
+          Treachery : There's a special place in hell for backstabbers like you.
         </p>
           
       </div>
