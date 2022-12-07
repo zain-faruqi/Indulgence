@@ -160,6 +160,7 @@ export default function Results() {
             />
           </div>
         </div>
+      </div>
       <h4>{sinText}</h4>
       <p>Your total number of transactions is <b>{transactions["transac_ct"]}.</b></p>
       <Button variant="danger" onClick={() => share()} >share</Button>
