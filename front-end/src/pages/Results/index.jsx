@@ -4,6 +4,7 @@ import wrath from '../../img/wrath.png';
 import greed from '../../img/greed.png';
 import gluttony from '../../img/gluttony.png';
 import heresy from '../../img/heresy.png';
+import fraud from '../../img/fraud.png';
 import limbo from '../../img/limbo.png';
 import treachery from '../../img/treachery.png';
 import lust from '../../img/lust.png';
@@ -14,8 +15,8 @@ import Button from 'react-bootstrap/Button'
 
 export default function Results() {
   
-  const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust]);
-  const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust"]);
+  const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust, fraud]);
+  const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust", "fraud"]);
 
 
   const [transactions, setTransactions] = useState([]);
@@ -55,13 +56,23 @@ export default function Results() {
 
   let sinText;
   if (sin === "limbo") {
-    sinText = "You are in Limbo, you are not going to hell or heaven, you are just floating around";
+    sinText = "You are in Limbo. Nothing wrong really, neither heaven nor hell.";
   } else if (sin === "heresy") {
-    sinText = "You are going to hell for Heresy, you are a heretic";
+    sinText = "You are going to hell for Heresy. Someone's a tad too blasphemous!";
   } else if (sin === "treachery") {
-    sinText = "You are going to hell for Treachery, you are a traitor";
+    sinText = "You are going to hell for Treachery. There's a special place in hell for backstabbers like you.";
   } else if (sin === "lust") {
-    sinText = "You are going to hell for Lust, you are a dirty dirty dog";
+    sinText = "You are going to hell for Lust. Someone's been committing adultery...";
+  } else if (sin === "gluttony") {
+    sinText = "You are going to hell for Gluttony. You eat a bit too much, don't you?";
+  } else if (sin === "greed") {
+    sinText = "You are going to hell for Greed. Money laundering? Hiding riches from family? You can't take that to hell.";
+  } else if (sin === "wrath") {
+    sinText = "You are going to hell for Wrath. Violence and moodiness won't get you anywhere but deeper.";
+  } else if (sin === "violence") {
+    sinText = "You are going to hell for Violence. Be kinder to others. And yourself. Or else...";
+  } else if (sin === "fraud") {
+    sinText = "You are going to hell for Fraud. Caught in webs of lies. Still want to expand the lore?";
   } else {
     sinText = "You are going to hell for " + sin;
   }
