@@ -76,8 +76,8 @@ export default function Results() {
 
 export default function Results() {
   
-  const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust]);
-  const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust"]);
+  const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust, fraud]);
+  const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust", "fraud"]);
 
   const downloadImage = () => {
     
