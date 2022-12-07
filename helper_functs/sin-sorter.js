@@ -131,27 +131,30 @@ export default function arbiter(API_obj) {
   // if treachery.percent >0 -> assign treachery
   // elif fraud.percent >0 -> assign fraud
   // elif violence.percent >0 -> assign violence
-  // else compare max between lust, gluttony, greed, wrath, heresy, limbo
+  // elif heresy.percent >0 -> assign heresy
+  // elif wrath.percent >0 -> assign wrath
+  // elif greed.percent >0 -> assign greed
+  // elif lust.percent >0 -> assign lust
+  // elif gluttony.percent >0.2 -> assign gluttony
+  // else assign limbo
   if (res.treachery.percent > 0)
     res.sin = 'treachery';
   else if (res.fraud.percent > 0)
     res.sin = 'fraud';
   else if (res.violence.percent > 0)
     res.sin = 'violence';
+  else if (res.heresy.percent > 0)
+    res.sin = 'heresy';
+  else if (res.wrath.percent > 0)
+    res.sin = 'wrath';
+  else if (res.greed.percent > 0)
+    res.sin = 'greed';
+  else if (res.lust.percent > 0)
+    res.sin = 'lust';
+  else if (res.gluttony.percent > 0.2)
+    res.sin = 'gluttony';
   else {
-    const max = Math.max(
-      res.lust.percent, res.gluttony.percent,
-      res.greed.percent, res.wrath.percent,
-      res.heresy.percent, res.limbo.percent
-    );
-
-    res.sin = (
-      max == res.lust.percent ? 'lust' :
-        max == res.gluttony.percent ? 'gluttony' :
-          max == res.greed.percent ? 'greed' :
-            max == res.wrath.percent ? 'wrath' :
-              max == res.heresy.percent ? 'heresy' : 'limbo'
-    );
+    res.sin = 'limbo';
   }
   return res;
 }
