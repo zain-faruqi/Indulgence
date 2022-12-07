@@ -97,6 +97,29 @@ export default function Results() {
   // DATA FOR DONUT CHART
   const [chartData, setChartData] = useState();
 
+  // PROCESSES DATA FOR THE DONUT CHART]
+  const getChartData = (data) => {
+    console.log(`processing inside getChartData: ${data}`);
+    // populate setChartData using response.data obj
+    // includes labels
+    // res = [ 
+    //    { title: 'limbo', value: 10, color: '#ffffff' }, 
+    //    { title: 'lust', value: 2, color: '#ffffff' },
+    // ]
+    let res = [];
+    let colors = {
+      'limbo': '#f1b0b0', 'lust': '#ea9999', 'gluttony': '#e06666',
+      'greed': '#df3333', 'wrath': '#cc0000', 'heresy': '#be0505',
+      'violence': '#990000', 'fraud': '#660000', 'treachery': '#510000'
+    };
+    for (const [key, val] of Object.entries(data)) {
+      if (typeof (val) === 'object' && val.score != 0)
+        res.push({title: key, value: val.score, color: colors[key]});
+      console.log(`Chart Data: ${res}`);
+    }
+    return res;
+  }
+
   useEffect(() => {
     (async () => {
       await getTransactions();
