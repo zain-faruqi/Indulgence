@@ -1,9 +1,8 @@
 .Results {
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
     background-color: #A92117;
     height: calc(100vh - 56px);
     width: 100%;
