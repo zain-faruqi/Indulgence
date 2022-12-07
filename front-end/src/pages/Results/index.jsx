@@ -187,20 +187,16 @@ export default function Results() {
   }
   
   return (
-  
     <div className='Results' >
-        <div id="hell">
-        <h2>Enjoy your time in Hell!</h2>
-        <p>
-          <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
-        </p>
-        <p>
-          {sinText}
-        </p>
-        <p>
-          Your Total number of transaction is {transactions["transac_ct"]}
-        </p>
-      
+      <h2>Enjoy your time in Hell!</h2>
+      <div className='hell_chart_container'>
+        <div className="hell">
+          <p>
+            <img id='img_result' src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
+          </p>
+        </div>
+        <div className="chart">
+          <div id='chart_container'>
             <PieChart
               data={chartData}
               lineWidth={15}
@@ -217,7 +213,11 @@ export default function Results() {
                 fontWeight: 'bold',
               })} 
             />
+          </div>
+        </div>
       </div>
+      <h4>{sinText}</h4>
+      <p>Your total number of transactions is <b>{transactions["transac_ct"]}.</b></p>
     </div>
   )
 
