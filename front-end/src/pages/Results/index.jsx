@@ -13,6 +13,7 @@ import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
 import html2canvas from 'html2canvas';
 //import ChartComponent from '../../components/donut_chart/ChartComponent.js';
+import { PieChart } from 'react-minimal-pie-chart';
 
 const baseURL = '/api/transactions';
 
@@ -61,9 +62,10 @@ export default function Results() {
     }
 
     getTransactions();
-  }, []);
-  */
-  /*if (!post) return null;*/
+  getTransactions();
+}, []);
+*/
+/*if (!post) return null;*/
 
 /*
   return (
