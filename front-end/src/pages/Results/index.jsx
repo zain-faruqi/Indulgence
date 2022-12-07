@@ -140,34 +140,19 @@ export default function Results() {
               console.log(transactions);
               //return transactions;
 
-              // populate setChartData using transactions obj
-              // includes labels
-              // data = [ 
-              //    { sin: 'limbo', value: 10 }, 
-              //    { sin: 'lust', value: 2 },
-              // ]
-              /*
-              let data = [];
-              for (const [key, val] of Object.entries(transactions)) {
-              if (typeof (val) === 'object' && val.percent != 0)
-                data.push({sin: key, value: val.percent});
-              }
-              console.log(data)
-              setChartData(data);
               console.log(chartData);
-              */
-          })
-          .catch((error) => {
-            console.error(error);
-          });
+            })
+            .catch((error) => {
+              console.error(error);
+            });
         }
-     
+
       }
-    )
+      )
       .catch((error) => {
         console.error(error);
       }
-    );
+      );
   }
   //getTransactions();
 
