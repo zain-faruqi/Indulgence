@@ -95,7 +95,7 @@ export default function Results() {
   const [transactions, setTransactions] = useState([]);
 
   // DATA FOR DONUT CHART
-  // const [chartData, setChartData] = useState([]);
+  const [chartData, setChartData] = useState();
 
   useEffect(() => {
     (async () => {
