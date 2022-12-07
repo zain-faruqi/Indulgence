@@ -72,9 +72,8 @@ export default function Results() {
 
 export default function Results() {
   
-  const [images, setImages] = useState([wrath, greed, gluttony, heresy]);
-  const [index, setIndex] = useState(Math.floor(Math.random() * 4));
-  const [sins, setSins] = useState(["Wrath", "Greed", "Gluttony", "Heresy"]);
+  const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust]);
+  const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust"]);
 
   const downloadImage = () => {
     
@@ -142,6 +141,22 @@ export default function Results() {
     );
   }
   //getTransactions();
+
+  const sin = transactions["sin"];
+  const index = sins.indexOf(sin);
+
+  let sinText;
+  if (sin === "limbo") {
+    sinText = "You are in Limbo, you are not going to hell or heaven, you are just floating around";
+  } else if (sin === "heresy") {
+    sinText = "You are going to hell for Heresy, you are a heretic";
+  } else if (sin === "treachery") {
+    sinText = "You are going to hell for Treachery, you are a traitor";
+  } else if (sin === "lust") {
+    sinText = "You are going to hell for Lust, you are a dirty dirty dog";
+  } else {
+    sinText = "You are going to hell for " + sin;
+  }
   
   return (
   
@@ -152,45 +167,14 @@ export default function Results() {
           <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
         </p>
         <p>
-          You are going to hell for {transactions["sin"]}
+          {sinText}
         </p>
         <p>
           Your Total number of transaction is {transactions["transac_ct"]}
         </p>
-        <h3>
-          Your Sins Breakdown:
-        </h3>
-        <p>
-          Limbo : Nothing wrong really, but there's a place in Hell for you too.
-        </p>
-        <p>
-          Lust : Someone's been committing adultery...
-        </p>
-        <p>
-          Gluttony : You eat a bit too much, don't you?
-        </p>
-        <p>
-          Greed : Money laundering? Hiding riches from family? You can't take that to hell.
-        </p>
-        <p>
-          Wrath : Violence and moodiness won't get you anywhere but deeper.
-        </p>
-        <p>
-          Heresy : Someone's a tad too blasphemous!
-        </p>
-        <p>
-          Violence : Be kinder to others. And yourself. Or else...
-        </p>
-        <p>
-          Fraud : Caught in webs of lies. Still want to expand the lore?
-        </p>
-        <p>
-          Treachery : There's a special place in hell for backstabbers like you.
-        </p>
-          
+      
       </div>
-        <button onClick={downloadImage} variant="danger">share</button>
-      </div>
+    </div>
   )
 
 }

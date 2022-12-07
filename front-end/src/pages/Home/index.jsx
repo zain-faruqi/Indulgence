@@ -43,11 +43,11 @@ const Home = () => {
      })
        .then(function (response) {
          console.log(response);
+         window.location.href = '/loading';
        })
        .catch((error) => {
          console.log(error);
         });
-    window.location.href = '/loading';
   },
   [],
 );
