@@ -8,7 +8,7 @@ import './styles.css';
 import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
 import html2canvas from 'html2canvas';
-import ChartComponent from '../../components/donut_chart/ChartComponent.js';
+//import ChartComponent from '../../components/donut_chart/ChartComponent.js';
 
 const baseURL = '/api/transactions';
 
@@ -156,11 +156,6 @@ export default function Results() {
         </p>
         <p>
           Your Total number of transaction is {transactions["transac_ct"]}
-        </p>
-        <p>
-          <div className="chart">
-            <ChartComponent data={transactions} />
-          </div>
         </p>
         <h3>
           Your Sins Breakdown:
