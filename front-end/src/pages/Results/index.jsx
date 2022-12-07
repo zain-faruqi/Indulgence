@@ -9,71 +9,10 @@ import limbo from '../../img/limbo.png';
 import treachery from '../../img/treachery.png';
 import lust from '../../img/lust.png';
 import './styles.css';
-import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
 import html2canvas from 'html2canvas';
-//import ChartComponent from '../../components/donut_chart/ChartComponent.js';
 import { PieChart } from 'react-minimal-pie-chart';
 
-const baseURL = '/api/transactions';
-
-/*
-React.useEffect(() => {
-  const createLinkToken = async () => {
-    axios.get('/api/create_link_token')
-      .then(function (response) {
-        console.log(response);
-        const link_token = response.data.link_token;
-        setToken(link_token);
-        console.log("token: " + token);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
-  createLinkToken();
-}, []);
-*/
-
-/*
-export default function Results() {
-  var transactions = [];
-  console.log("1")
-  const getTransactions = async () => {
-    axios.get('/api/transactions').then((response) => {
-      consolf.log("2")
-      console.log(response);
-      transactions = response.data.transactions;
-    });
-  }
-
-  getTransactions();
-*/
-
-/*
-const [post, setPost] = React.useState(null);
-
-React.useEffect(() => {
-  const getTransactions = async () => {
-    axios.get('/api/transactions').then((response) => {
-      console.log(response);
-      setPost(response.data);
-    });
-  }
-
-  getTransactions();
-}, []);
-*/
-/*if (!post) return null;*/
-
-/*
-  return (
-    <div>
-      {transactions}
-    </div>
-  );
-}
-*/
 
 export default function Results() {
 
@@ -88,7 +27,6 @@ export default function Results() {
         const imgData = canvas.toDataURL('image/png');
         window.open(imgData);
       })
-
   };
 
   const [transactions, setTransactions] = useState([]);
@@ -122,7 +60,6 @@ export default function Results() {
   useEffect(() => {
     (async () => {
       await getTransactions();
-      //await setChartData();
     })();
   }, []);
 
@@ -133,9 +70,7 @@ export default function Results() {
           axios.get('/api/transactions')
             .then(function (response) {
               console.log('response:' + JSON.stringify(response.data));
-              //type error
               setTransactions(response.data);
-              //let transactions = response.data;
               console.log(transactions);
               //return transactions;
 
@@ -149,7 +84,6 @@ export default function Results() {
               console.error(error);
             });
         }
-
       }
       )
       .catch((error) => {
@@ -157,7 +91,6 @@ export default function Results() {
       }
       );
   }
-  //getTransactions();
 
   const sin = transactions["sin"];
   const index = sins.indexOf(sin);
@@ -183,6 +116,19 @@ export default function Results() {
     sinText = "You are going to hell for Fraud. Caught in webs of lies. Still want to expand the lore?";
   } else {
     sinText = "You are going to hell for " + sin;
+  }
+
+  const share = () => {
+    console.log("share");
+    if (navigator.share) {
+      navigator.share({
+        title: 'Your Hell',
+        text: `I am going to hell for ${sin}!}`,
+        url: images[parseInt(index)],
+      })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    }
   }
 
   return (
@@ -214,123 +160,9 @@ export default function Results() {
             />
           </div>
         </div>
-      </div>
       <h4>{sinText}</h4>
       <p>Your total number of transactions is <b>{transactions["transac_ct"]}.</b></p>
+      <Button variant="danger" onClick={() => share()} >share</Button>
     </div>
   )
-
 }
-
-/*<div>{tramsaction}</div> */
-/*
-  const [images, setImages] = useState([wrath, greed, gluttony, heresy]);
-  const [index, setIndex] = useState(Math.floor(Math.random() * 4));
-  const [sins, setSins] = useState(["Wrath", "Greed", "Gluttony", "Heresy"]);
-
-  const downloadImage = () => {
-    
-    const div = document.getElementById('hell');
-    html2canvas(div)
-      .then((canvas) => {
-      const imgData = canvas.toDataURL('image/png');
-        window.open(imgData);
-      })
-    
-  }; 
-  
-
-  
-      
-
-    return (
-      <div className='Results' >
-        <div id="hell">
-        <h2>Enjoy your time in Hell!</h2>
-        <p>
-          <img src={images[parseInt(index)]} alt="hell image" height={400} width={400} />
-        </p>
-
-        <p>
-          You are going to hell for {sins[parseInt(index)]}
-        </p>
-          
-          
-      </div>
-        <button onClick={downloadImage} variant="danger">share</button>
-      </div>
-    )
-
-}
-
-export default Results;
-*/
-
-/*
-   return (
-      <div>
-      {getTransactions}
-        Returned
-      </div>
-    )
-
-}
-*/
-
-
-/*
-export default class Results extends React.Component {
-  state = {
-    transactions: []
-  }
-
-  componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`)
-      .then(res => {
-        const persons = res.data;
-        this.setState({ persons });
-      })
-  }
-
-  render() {
-    return (
-      <ul>
-        {
-          this.state.persons
-            .map(person =>
-              <li key={person.id}>{person.name}</li>
-            )
-        }
-      </ul>
-    )
-  }
-}
-*/
-/*export default class Results extends React.Component{
-  async getData() {
-      const res = await axios("/api/transactions");
-      return await res.json(); // (Or whatever)
-  }
-  constructor(...args) {
-      super(...args);
-      this.state = {data: null};
-  }
-  componentDidMount() {
-      if (!this.state.data) {
-          (async () => {
-              try {
-                  this.setState({data: await this.getData()});
-              } catch (error) {
-                  console.log("U got an error!")
-              }
-          })();
-      }
-  }
-  render() {
-      return (
-          <div>
-              {this.state.data ? <em>Loading...</em> : this.state.data}
-          </div>
-      );
-  }
-}*/
