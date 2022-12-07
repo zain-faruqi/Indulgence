@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import wrath from '../../img/wrath.png';
 import greed from '../../img/greed.png';
@@ -50,18 +50,17 @@ export default function Results() {
   getTransactions();
 */
 
-  /*
-  const [post, setPost] = React.useState(null);
+/*
+const [post, setPost] = React.useState(null);
 
-  React.useEffect(() => {
-    const getTransactions = async () => {
-      axios.get('/api/transactions').then((response) => {
-        console.log(response);
-        setPost(response.data);
-      });
-    }
+React.useEffect(() => {
+  const getTransactions = async () => {
+    axios.get('/api/transactions').then((response) => {
+      console.log(response);
+      setPost(response.data);
+    });
+  }
 
-    getTransactions();
   getTransactions();
 }, []);
 */
@@ -77,20 +76,20 @@ export default function Results() {
 */
 
 export default function Results() {
-  
+
   const [images, setImages] = useState([wrath, greed, gluttony, heresy, limbo, heresy, treachery, lust, fraud]);
   const [sins, setSins] = useState(["wrath", "greed", "gluttony", "heresy", "limbo", "heresy", "treachery", "lust", "fraud"]);
 
   const downloadImage = () => {
-    
+
     const div = document.getElementById('hell');
     html2canvas(div)
       .then((canvas) => {
-      const imgData = canvas.toDataURL('image/png');
+        const imgData = canvas.toDataURL('image/png');
         window.open(imgData);
       })
-    
-  }; 
+
+  };
 
   const [transactions, setTransactions] = useState([]);
 
@@ -125,14 +124,14 @@ export default function Results() {
       await getTransactions();
       //await setChartData();
     })();
-},[]);
-  
+  }, []);
+
   const getTransactions = async () => {
     await axios.get('/api/is_user_connected')
       .then(function (response) {
         if (response) {
-           axios.get('/api/transactions')
-          .then(function (response) {
+          axios.get('/api/transactions')
+            .then(function (response) {
               console.log('response:' + JSON.stringify(response.data));
               //type error
               setTransactions(response.data);
@@ -185,7 +184,7 @@ export default function Results() {
   } else {
     sinText = "You are going to hell for " + sin;
   }
-  
+
   return (
     <div className='Results' >
       <h2>Enjoy your time in Hell!</h2>
@@ -265,8 +264,8 @@ export default function Results() {
 }
 
 export default Results;
-*/  
-    
+*/
+
 /*
    return (
       <div>
