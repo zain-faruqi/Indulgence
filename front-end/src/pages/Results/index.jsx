@@ -201,6 +201,22 @@ export default function Results() {
           Your Total number of transaction is {transactions["transac_ct"]}
         </p>
       
+            <PieChart
+              data={chartData}
+              lineWidth={15}
+              paddingAngle={5}
+              rounded
+              labelPosition={45}
+              viewBoxSize={[100, 100]}
+              radius={45}
+              label={({dataEntry}) => `${dataEntry.title} (${dataEntry.value})`}
+              labelStyle={(index) => ({
+                fill: chartData[index].color,
+                fontSize: '4px',
+                fontFamily: 'sans-serif',
+                fontWeight: 'bold',
+              })} 
+            />
       </div>
     </div>
   )
