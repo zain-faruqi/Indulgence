@@ -4,6 +4,10 @@ import wrath from '../../img/wrath.png';
 import greed from '../../img/greed.png';
 import gluttony from '../../img/gluttony.png';
 import heresy from '../../img/heresy.png';
+import fraud from '../../img/fraud.png';
+import limbo from '../../img/limbo.png';
+import treachery from '../../img/treachery.png';
+import lust from '../../img/lust.png';
 import './styles.css';
 import { saveAs } from 'file-saver';
 import Button from 'react-bootstrap/Button'
