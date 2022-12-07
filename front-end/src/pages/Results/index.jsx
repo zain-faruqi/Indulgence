@@ -140,6 +140,10 @@ export default function Results() {
               console.log(transactions);
               //return transactions;
 
+              // CHART 
+              console.log(`passing ${response.data} to setChartData...`);
+              let res = getChartData(response.data);
+              setChartData(res);
               console.log(chartData);
             })
             .catch((error) => {
