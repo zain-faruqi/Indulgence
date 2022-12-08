@@ -1,3 +1,19 @@
+p, h2 {
+    font-family: sans-serif;
+    color: #FEE9E9;
+}
+
+a:link,
+a:visited {
+    color: #FEE9E9;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #FBA0A0;
+}
+
 .About {
     display: flex;
     align-items: center;
@@ -6,6 +22,9 @@
     flex-direction: column;
     background-color: #A92117;
     height: calc(100vh - 56px);
-    width: 100%;
+    width: 85%;
 }
- 
+
+.title {
+    margin-top: 2em;
+}
