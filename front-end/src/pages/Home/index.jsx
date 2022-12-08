@@ -83,13 +83,14 @@ const Home = () => {
     
     return (
       <div className='HOME'>
-        <h2>Which Hell is your Home? </h2>
-        
-          <Button variant="danger" onClick={() => open()} disabled={!ready}>FIND OUT WITH <img src={plaid_api} alt="plaid_api" height={50} width={100}/></Button>
-        
+        <div class='title'>
+        <img src="https://see.fontimg.com/api/renderfont4/4a4x/eyJyIjoiZnMiLCJoIjoxMDAsInciOjIwMDAsImZzIjo1MCwiZmdjIjoiI0ZGRjZGNiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/SU5EVUxHRU5DRS4/straighttohell-bb.png" alt="Ancient fonts"></img>
+        </div>
+        <h2>Which Hell is your Home?</h2>
+        <br></br>
+        <Button variant="danger" onClick={() => open()} disabled={!ready}>FIND OUT WITH <img src={plaid_api} alt="plaid_api" height={50} width={100}/></Button> 
       </div>
     )
-
 }
 
 export default Home;
