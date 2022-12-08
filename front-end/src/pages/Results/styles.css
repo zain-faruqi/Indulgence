@@ -8,7 +8,7 @@
     width: 100%;
     color: white;
     margin: auto;
-    padding: 4em;
+    padding: 2em;
 }
 
 .hell, .chart {
@@ -25,6 +25,8 @@
 .hell_chart_container {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    width: 80%;
 }
 
 img {
@@ -33,4 +35,8 @@ img {
 
 #img_result {
     border: 1em solid white;
+}
+
+.title {
+    margin-bottom: 1.5em;
 }

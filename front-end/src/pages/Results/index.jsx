@@ -132,8 +132,10 @@ export default function Results() {
   }
 
   return (
-    <div className='Results' >
-      <h2>Enjoy your time in Hell!</h2>
+    <div className='Results'>
+      <div class='title'>
+      <img src="https://see.fontimg.com/api/renderfont4/4a4x/eyJyIjoiZnMiLCJoIjo1MCwidyI6MjAwMCwiZnMiOjI1LCJmZ2MiOiIjRkZGNkY2IiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/RU5KT1kgWU9VUiBUSU1FIElOIEhFTEwh/straighttohell-bb.png" alt="Ancient fonts"></img>
+      </div>
       <div className='hell_chart_container'>
         <div className="hell">
           <p>
