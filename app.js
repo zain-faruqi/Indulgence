@@ -105,7 +105,7 @@ app.get("/api/create_link_token", async (req, res, next) => {
     language: "en",
     products: ["transactions"],
     country_codes: ["US"],
-    //add redirect uri in production
+    redirect_uri: process.env.REDIRECT_URI
   });
   console.log(`Token response: ${JSON.stringify(tokenResponse.data)}`);
 
