@@ -46,4 +46,5 @@ a:hover {
   display: flex;
   flex-direction: column;
   background-color: #a92117e3;
+  padding: 4em;
 }
