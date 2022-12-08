@@ -149,7 +149,7 @@ export default function Results() {
               lineWidth={15}
               paddingAngle={5}
               rounded
-              labelPosition={45}
+              labelPosition={60}
               viewBoxSize={[100, 100]}
               radius={45}
               label={({dataEntry}) => `${dataEntry.title} (${dataEntry.value})`}
